@@ -1,0 +1,1684 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+html,body{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    background-color: #FEFEDF;
+    
+}
+a{
+    text-decoration: none;
+}
+#main{
+    height: 100%;
+    width: 100%;
+
+    
+}
+#m1{
+    padding-top: 5%;
+    height: 60%;
+    width: 96%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+
+    background-image: url(https://mcdn.wallpapersafari.com/medium/32/32/HbsIBw.jpg);
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 6%;
+    border-radius: 10px;
+    isolation: isolate;
+    animation: imgslide 50s infinite  ease 0.5s;
+
+
+}
+
+
+#m1::after{
+    height: 60%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 6%;
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: black;
+    opacity: 0.5;
+}
+#bar{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    border-bottom: 1px solid black;
+ 
+    background-color:#22668D;
+    border-radius: 10px;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    margin-right: 1%;
+
+    margin-top: 1%;
+    opacity: 1;
+    position: fixed;
+    top: -2%;
+    z-index: 10;
+
+    
+}
+#logo{
+   
+    height: 120%;
+    border-radius: 15px;
+    background-color: #FEFEDF;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#h21{
+    color: brown;
+    font-size: 300%;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+    position: absolute;
+    top: 15%;
+    left: 4%;
+}
+#barlist{
+  
+    border-radius: 10px;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin-top: .5%;
+    margin-left: 13%;
+    justify-content: space-around;
+    overflow: hidden;
+  
+}
+#barlist h3{
+    color: white;
+    text-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    overflow: hidden;
+    transition: all ease 0.1s;
+}
+#barlist h3:hover{
+    color: brown;
+    font-size: 110%;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+
+  
+    
+}
+#icons{
+
+    display: flex;
+    width: 20%;
+    font-size: 180%;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 1.5%;
+   
+    position: absolute;
+    top: 2%;
+    left: 75%;
+
+}
+#i1,#i2,#i3{
+    color:black;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+ 
+}
+#icons #i3:hover{
+    color: cornflowerblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+
+}
+#icons #i1:hover{
+    color: skyblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i2:hover{
+    color: rgb(211, 64, 38);
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#t1{
+    text-align: center;
+    font-size: 200%;
+ 
+    color: aliceblue;
+    transition: all ease 0.1s;
+}
+#t1:hover{
+    text-shadow: 0 0 10px #fff,
+                  0 0 20px #fff,
+                  0 0 40px #fff,
+                 0 0 80px #fff;
+}
+#rgpv{
+    font-size: 70%;
+}
+#cn{
+ 
+
+    color: brown;
+    font-size: 160%;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff;
+        
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+    animation: autotyping 2s forwards ;
+    animation-delay: 2s;
+
+}
+#cn1{
+
+    color: brown;
+    font-size: 160%;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 80px #fff;
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+    animation: autotyping 2s forwards ;
+    animation-delay: 4s;
+
+}
+
+#btn1{
+    color: white;
+    position: absolute;
+    top: 63%;
+    right: 45%;
+    font-size: 200%;
+    border-radius: 10px;
+    background-color:black;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 40px #fff;
+    transition: all ease .2s;
+}
+#btn1:hover{
+
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+#m2{
+
+    height: 28%;
+    width: 96%;
+    margin-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+  
+    display: flex;
+    justify-content: space-around;
+   
+ 
+
+
+}
+#bx1{
+    color: white;
+    background-color :wheat;
+    background-color:#22668D;
+    height: 90%;
+    width: 200%;
+    border-radius: 15px;
+    font-size: 70%;
+    padding-left: 50%;
+    text-shadow: 0 0 10px black,
+    0 0 80px black;
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+ 
+
+             
+}
+#bx2{
+    color: white;
+    background-color:wheat;
+    background-color:#22668D;
+    height: 90%;
+    width: 200%;
+    border-radius: 15px;
+    font-size: 70%;
+    padding-left: 50%;
+   
+    text-shadow: 0 0 10px black,
+    0 0 80px black;
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+
+
+ 
+
+}
+#bx3{
+    color: white;
+    background-color: wheat;
+    background-color:#22668D;
+    height: 90%;
+    width: 200%;
+    border-radius: 15px;
+    font-size: 70%;
+    padding-left: 45%;
+    text-shadow: 0 0 10px black,
+    0 0 80px black;
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+}
+#i5{
+    font-size: 1000%;
+}
+#i6{
+    font-size: 1000%;
+}
+#i7{
+    font-size: 900%;
+}
+#bx1:hover{
+    color: black;
+    background-color: white;
+}
+#bx2:hover{
+    color: black;
+    background-color: white;
+}
+#bx3:hover{
+    color: black;
+    background-color: white;
+}
+h5{
+    font-size: 180%;
+}
+#h52{
+    font-size: 180%;
+   
+}
+#m3{
+    display: flex;
+    height: 40%;
+    width: 96%;
+    overflow: hidden;
+    margin-left: 2%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+
+}
+#m4{
+    display: flex;
+    height: 40%;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 3%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+ 
+}
+#img1{
+    border-radius: 30px;
+    height: 200%;
+    width: 100%;
+    margin-top: -10%;
+    transition: all ease 0.5s;
+  
+
+}
+#img1:hover{
+    scale: 1.1;
+  
+}
+#img2{
+    width: 48%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+
+}
+#img2:hover{
+    scale: 1.1;
+}
+
+#img3{
+    width: 48%;
+    height: 100%;
+    border-radius: 10px;
+    margin-left: 4%;
+    transition: all ease 0.5s;
+}
+#img3:hover{
+    scale: 1.1;
+}
+
+#m5{
+    height: 80%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+    background-image: url(https://c1.wallpaperflare.com/preview/944/115/771/study-hat-board-school-chalk-training.jpg) ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+}
+#h22{
+    text-align: center;
+    font-size: 360%;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px black,
+                 0 0 80px black;
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+    animation: autotyping 2s forwards ;
+}
+#l1{
+    margin-left: 10%;
+    margin-top: 0%;
+    font-size: 180% ;
+
+}
+#l1:hover{
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff;
+}
+#h23{
+    position: absolute;
+    right: 8%;
+    top: 255%;
+    font-size: 250%;
+    font-weight: 900;
+
+    font-style: oblique;
+}
+#h23:hover{
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff;
+}
+#zfinger{
+    position: absolute;
+    right: 56% ;
+    top: 260%;
+    height: 10%;
+    width: 10%;
+
+}
+#m6{
+    height: 110%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: -15%;
+    padding-bottom: 3%;
+    background-image: url(ZASCTHD.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    isolation: isolate;
+
+    
+}
+#m6::after{
+    height: 100%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 147%;
+    border-radius: 10px;
+    
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: black;
+    opacity: 0.5;
+}
+#r1{
+    display:flex;
+    margin-top: 20%;
+   
+    height: 35%;
+    width: 96%;
+    margin-left: 2%;
+    justify-content: space-around;
+}
+#r2{
+  
+    display:flex;
+    margin-top: 15%;
+    height: 45%;
+    width: 96%;
+    margin-left: 2%;
+    justify-content: space-around;
+}
+
+#box1{
+  
+    margin-top: 25%;
+    
+    height: 90%;
+    width: 140%;
+    border-radius: 10px;
+    justify-content: center;
+    color: white;
+    background-color:transparent;
+     box-shadow: 0 0 10px black,
+                 0 0 20px black,
+                 0 0 40px black;
+ 
+}
+#box1:hover{
+   
+    color: white;
+    box-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff; 
+    cursor: pointer;
+}
+#i8{
+    
+    font-size: 800%;
+    margin-left: 15%;
+}
+#h53{
+    font-size: 190%;
+
+    margin-left: 10%;
+}
+#box2{
+    margin-top: 25%;
+ 
+    height: 90%;
+    width: 140%; 
+    color:white;
+    background-color: transparent;
+     border-radius: 10px;
+     box-shadow: 0 0 10px black,
+                 0 0 20px black,
+                 0 0 40px black;
+  
+}
+#box2:hover{
+ 
+    color: white;
+    box-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff;
+    cursor: pointer;
+}
+#i9{
+    font-size: 800%;
+    margin-left: 15%;
+}
+#h54{
+    font-size: 190%;
+
+    margin-left: 10%;
+}
+#box3{
+    
+    margin-top: 25%;
+  
+    height: 90%;
+    width: 140%;
+    color:white;
+    background-color:transparent;
+    border-radius: 10px;
+     box-shadow: 0 0 10px black,
+                 0 0 20px black,
+                 0 0 40px black;
+}
+#box3:hover{
+   
+    color: white;
+    box-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff;   
+    cursor: pointer;
+}
+#i11{
+    font-size: 800%;
+    margin-left: 20%;
+}
+#h56{
+    font-size: 150%;
+
+    margin-left: 10%;
+}
+
+#box4{
+    color: white;
+    height: 95%;
+    width: 140%;
+    padding-bottom: 20%;
+    background-color: transparent;
+    border-radius: 10px;
+     box-shadow: 0 0 10px black,
+                 0 0 20px black,
+                 0 0 40px black;
+}
+#box4:hover{
+    color: white;
+    box-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff;
+    cursor: pointer;
+}
+#i10{
+    font-size: 800%;
+    margin-left: 15%;
+}
+#h55{
+    font-size: 120;
+
+    margin-left: 17%;
+}
+
+#box5{
+    color: white;
+  
+    height: 95%;
+    width: 140%;
+   padding-bottom: 20%;
+    background-color: transparent;
+    border-radius: 10px;
+     box-shadow: 0 0 10px black,
+                 0 0 20px black,
+                 0 0 40px black;
+}
+#box5:hover{
+  
+    color:white;
+    box-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff; 
+    cursor: pointer;
+}
+#i12{
+    font-size: 800%;
+    margin-left: 20%;
+}
+#h57{
+    font-size: 150%;
+
+    margin-left: 10%;
+}
+
+#box6{
+   
+    height: 95%;
+    width: 140%;
+    color: white;
+    padding-bottom: 20%;
+    background-color: transparent;
+    border-radius: 10px;
+     box-shadow: 0 0 10px black,
+                 0 0 20px black,
+                 0 0 40px black;
+}
+#box6:hover{
+  
+    color: white;
+    box-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff;
+
+    cursor: pointer;
+}
+#i13{
+    font-size: 800%;
+    margin-left: 20%;
+}
+#h58{
+    font-size: 135%;
+   
+   margin-left: 10%;
+}
+#m7{
+    height: 29%;
+    width: 100%;
+    color: white;
+    margin-top: 2%;
+    padding-top: 1%;
+    background-color:#22668D;
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+}
+#info{
+    text-align: center;
+}
+#dvc{
+    position: relative;
+    left: 85%;
+    top: -10;
+}
+
+#ask{
+    font-size: 20%;
+}
+#botbtn{
+    margin-right: 90%;
+    background-color: transparent;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    position: fixed;
+  
+   
+}
+#botimg{
+    border-radius: 70px;
+
+    height: 140%;
+    width: 140%;
+    animation: bot 1s linear infinite ;
+    box-shadow: 0 0 10px skyblue,
+                0 0 20px skyblue,
+                0 0 40px skyblue;
+ 
+}
+#botimg:hover{
+    animation: none;
+}
+
+
+
+
+
+
+.contact-tab {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 0 10px black,
+                0 0 20px black,
+                0 0 40px black;
+ 
+}
+
+.contact-tab:hover {
+    background-color: #0056b3;
+}
+
+
+.contact-content {
+    position: fixed;
+    top: 53%;
+    right: -250px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    width: 250px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+}
+
+
+.contact-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+
+#facilities{
+    padding-top: 7%;
+}
+#services{
+    padding-top: 2%;
+}
+
+
+
+#bottomnav{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: 2%;
+}
+#bottomnav a{
+    color: brown;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+
+#bottomnav a:hover{
+  
+    border-bottom: solid white;
+}
+
+
+
+
+
+
+
+
+@keyframes bot {
+    from{scale: 1;}
+    to{scale: 1.2;}
+    
+}
+
+
+
+
+@keyframes autotyping {
+    from{width: 0;}
+    to{width: 100%;}
+    
+}
+
+@keyframes imgslider {
+    0%{
+        background-image: url(https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29sbGVnZXxlbnwwfHwwfHx8MA%3D%3D);
+    }
+    20%{
+        background-image: url(https://mcdn.wallpapersafari.com/medium/32/32/HbsIBw.jpg);   
+    }    
+    40%{
+      
+        background-image: url(ZASCTHD.jpg);
+    }
+    60%{
+        background-image: url(https://c0.wallpaperflare.com/preview/969/484/34/college-students-diploma-graduate-tassel.jpg);
+    }
+    80%{
+        background-image: url(https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29sbGVnZXxlbnwwfHwwfHx8MA%3D%3D);
+    }
+    100%{
+        background-image: url(https://img.freepik.com/premium-photo/successful-indian-female-student-with-group-college-students-classroom-university_466689-95593.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698192000&semt=ais);
+    }
+   }
+
+
+
+
+
+
+
+
+
+/* Add media query for small screens */
+@media (max-width: 768px) {
+
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+       
+    }
+    html,body{
+        scroll-behavior: smooth;
+        width: 100%;
+        height: 100%;
+        
+    }
+    #main{
+        height: 100%;
+        width: 100%;
+        
+    }
+    #m1{
+        height: 25%;
+        width: 96%;
+        background-image: url(https://mcdn.wallpapersafari.com/medium/32/32/HbsIBw.jpg);
+        background-size: cover;
+        background-position: center;
+        font-size: 40%;
+        box-shadow: 0 0 10px #fff,
+
+        0 0 80px #fff;     
+        margin-left: 2%;
+       
+        margin-top: 10%;
+        border-radius: 10px;
+        isolation: isolate;
+    }
+    
+    
+    #m1::after{
+        height: 25%;
+        width: 96%;
+        margin-left: 2%;
+        
+        margin-top: 10%;
+        border-radius: 10px;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background: black;
+        opacity: 0.5;
+    }
+    #bar{
+        display: flex;
+        height: 5%;
+        width: 100%;
+        box-shadow: 0 0 10px #fff,
+        0 0 80px #fff;
+        background-color:#22668D;
+       
+        padding-bottom: 1%;
+        padding-right: 1%;
+        padding-top: 4%;
+       
+       
+        margin-top: 1%;
+        opacity: 1;
+        position: fixed;
+        top: -2%;
+        z-index: 10;
+        font-size: 30%;
+    
+        
+    }
+    #logo{
+    
+        height: 100%;
+        width: 100%;
+        
+    }
+    #h21{
+        color: brown;
+        font-size: 300%;
+        margin-top: 2%;
+    }
+    #barlist{
+        
+        border-radius: 1px;
+        width: 60%;
+        height: 30%;
+        display: flex;
+        margin-top: 1.5%;
+        margin-left: 12%;
+        justify-content: space-around;
+      
+    }
+    #barlist h3{
+        color: white;
+        transition: all ease 0.1s;
+    }
+    #barlist h3:hover{
+        color: brown;
+        font-size: 130%;
+    }
+    #icons{
+    
+        display: flex;
+        width: 20%;
+        font-size: 180%;
+        justify-content: space-between;
+        margin-left: 3%;
+        margin-top: 4%;
+    
+        position: absolute;
+        top: 2%;
+        left: 75%;
+    
+    }
+    #i1,#i2,#i3{
+        color: black;
+    }
+    #icons #i3:hover{
+        color: cornflowerblue;
+    
+    }
+    #icons #i1:hover{
+        color: skyblue;
+    }
+    #icons #i2:hover{
+        color: rgb(211, 64, 38);
+    }
+    #t1{
+        font-size: 200%;
+        position: absolute;
+        top: 10%;
+        left: 3%;
+        color: aliceblue;
+        transition: all ease 0.1s;
+    }
+    #t1:hover{
+        text-shadow: 0 0 10px #fff,
+                      0 0 20px #fff;
+    }
+    #rgpv{
+        font-size: 70%;
+    }
+    #cn{
+     
+    
+        color: brown;
+        font-size: 150%;
+        font-weight: 900;
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff;
+            
+        display: inline-block;
+        overflow: hidden;
+        width: 0;
+        white-space: nowrap;
+        animation: autotyping 2s forwards ;
+        animation-delay: 2s;
+    
+    }
+    #cn1{
+    
+        color: brown;
+        font-size: 150%;
+        font-weight: 900;
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff;
+        display: inline-block;
+        overflow: hidden;
+        width: 0;
+        white-space: nowrap;
+        animation: autotyping 2s forwards ;
+        animation-delay: 4s;
+    
+    }
+    
+    #btn1{
+        color: white;
+        position: absolute;
+        top: 27%;
+        right: 45%;
+        font-size: 200%;
+        border-radius: 10px;
+        background-color:black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: all ease .2s;
+    }
+    #btn1:hover{
+    
+        color: black;
+        background-color: white;
+        cursor: pointer;
+    }
+    #m2{
+    
+        height: 15%;
+        width: 96%;
+        margin-top: 4%;
+        margin-left: 2%;
+       
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    #bx1{
+        color: white;
+        background-color:#22668D;
+        height: 45%;
+        width: 150%;
+        border-radius: 1.5px;
+        font-size: 35%;
+        padding-left: 10%;
+        transition: all ease 0.1s;
+        box-shadow: 0 0 10px black, 0 0 80px black;
+                 
+    }
+    #bx2{
+        color:white;
+        background-color:#22668D;
+        height: 45%;
+        width: 150%;
+        border-radius: 1.5px;
+        font-size: 35%;
+        padding-left: 10%;
+        transition: all ease 0.1s;
+        box-shadow: 0 0 10px black, 0 0 80px black;
+    }
+    #bx3{
+        color:white;
+        background-color:#22668D;
+        height: 45%;
+        width: 150%;
+        border-radius: 1.5px;
+        font-size: 35%;
+        padding-left: 10%;
+        transition: all ease 0.1s;
+        box-shadow: 0 0 10px black, 0 0 80px black;
+     }
+    #i5{
+        font-size: 500%;
+    }
+    #i6{
+        font-size: 500%;
+    }
+    #i7{
+        font-size: 500%;
+    }
+    #bx1:hover{
+        color:black;
+        background-color:white;
+    } 
+       
+    #bx2:hover{
+        color:black;
+        background-color:white;
+    }
+    #bx3:hover{
+        color:black;
+        background-color:white;
+    }
+    h5{
+        font-size: 90%;
+    }
+    #h52{
+        font-size: 90%;
+       
+    }
+    #m3{
+        display: flex;
+        height: 17%;
+        width: 96%;
+        overflow: hidden;
+        margin-left: 2%;
+        margin-top: -10%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black, 0 0 80px black;
+                 }
+    #m4{
+        display: flex;
+        height: 17%;
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 3%;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black, 0 0 80px black;
+        }
+    #img1{
+        border-radius: 10px;
+        height: auto;
+        width: 100%;
+        transition: all ease 0.5s;
+      
+    
+    }
+    #img1:hover{
+        scale: 1.1;
+      
+    }
+    #img2{
+        width: 48%;
+        height: 100%;
+        border-radius: 10px;
+        transition: all ease 0.5s;
+    
+    }
+    #img2:hover{
+        scale: 1.1;
+    }
+    
+    #img3{
+        width: 48%;
+        height: 100%;
+        border-radius: 10px;
+        margin-left: 4%;
+        transition: all ease 0.5s;
+    }
+    #img3:hover{
+        scale: 1.1;
+    }
+    
+    #m5{
+        font-size: 30%;
+        height: 70%;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
+        color: white;
+        background-image: url(https://c1.wallpaperflare.com/preview/944/115/771/study-hat-board-school-chalk-training.jpg) ;
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px;
+        box-shadow: 0 0 10px black, 0 0 80px black;
+              }
+    #h22{
+        text-align: center;
+        font-size: 360%;
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px black;
+                 
+        display: inline-block;
+        overflow: hidden;
+        width: 0;
+        white-space: nowrap;
+        animation: autotyping 2s forwards ;
+    }
+    #l1{
+        margin-left: 10%;
+        margin-top: 0%;
+        font-size: 180% ;
+    
+    }
+    #l1:hover{
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff;
+    }
+    #h23{
+        position: absolute;
+        right: 5% ;
+        top: 94%;
+        font-size: 250%;
+        font-weight: 900;
+    
+        font-style: oblique;
+    }
+    #h23:hover{
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 40px #fff,
+                     0 0 80px #fff;
+    }
+    #zfinger{
+        position: absolute;
+        right: 55% ;
+        top: 95%;
+        height: 2.5%;
+        width: 5%;
+    
+    }
+    #m6{
+        height: 25%;
+        width: 96%;
+        margin-left: 2%;
+    
+        margin-top: 4%;
+        background-image: url(ZASCTHD.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black, 0 0 80px black;
+        isolation: isolate;
+    
+             }
+    #m6::after{
+        height: 27%;
+        width: 96%;
+        margin-left: 2%;
+     
+        margin-top: 210%;
+        border-radius: 10px;
+      
+        content: '';
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background: black;
+        opacity: 0.5;
+    }
+    #r1{
+        display:flex;
+        margin-top: 5%;
+       
+        height: 17%;
+        width: 96%;
+        margin-left: -1%;
+        justify-content: space-around;
+    }
+    #r2{
+        margin-top: 4%;
+        display:flex;
+      
+        height: 22%;
+        width: 96%;
+        margin-left: -1%;
+        justify-content: space-around;
+    }
+    
+    #box1{
+      
+        margin-top: 25%;
+        height: 90%;
+        width: 140%;
+        border-radius: 10px;
+        justify-content: center;
+        color: white;
+        background-color:transparent;
+         box-shadow: 0 0 10px black,
+                     0 0 20px black,
+                     0 0 40px black;
+     
+    }
+    #box1:hover{
+       
+        color: white;
+        box-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff; 
+        cursor: pointer;
+    }
+    #i8{
+        
+        font-size: 400%;
+        margin-left: 15%;
+    }
+    #h53{
+        font-size: 90%;
+    
+        margin-left: 20%;
+    }
+    #box2{
+        margin-top: 25%;
+     
+        height: 90%;
+        width: 140%; 
+        color:white;
+        background-color: transparent;
+         border-radius: 10px;
+         box-shadow: 0 0 10px black,
+                     0 0 20px black,
+                     0 0 40px black;
+      
+    }
+    #box2:hover{
+     
+        color: white;
+        box-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff;
+        cursor: pointer;
+    }
+    #i9{
+        font-size: 400%;
+        margin-left: 15%;
+    }
+    #h54{
+        font-size: 90%;
+    
+        margin-left: 20%;
+    }
+    #box3{
+        
+        margin-top: 25%;
+      
+        height: 90%;
+        width: 140%;
+        color:white;
+        background-color:transparent;
+        border-radius: 10px;
+         box-shadow: 0 0 10px black,
+                     0 0 20px black,
+                     0 0 40px black;
+    }
+    #box3:hover{
+       
+        color: white;
+        box-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff;   
+        cursor: pointer;
+    }
+    #i11{
+        font-size: 400%;
+        margin-left: 20%;
+    }
+    #h56{
+        font-size: 50%;
+    
+        margin-left: 20%;
+    }
+    
+    #box4{
+        color: white;
+        height: 95%;
+        width: 140%;
+        
+        background-color: transparent;
+        border-radius: 5px;
+         box-shadow: 0 0 10px black,
+                     0 0 20px black,
+                     0 0 40px black;
+    }
+    #box4:hover{
+        color: white;
+        box-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff;
+        cursor: pointer;
+    }
+    #i10{
+        font-size: 400%;
+        margin-left: 15%;
+    }
+    #h55{
+        font-size: 50%;
+    
+        margin-left: 30%;
+    }
+    
+    #box5{
+        color: white;
+      
+        height: 95%;
+        width: 140%;
+    
+        background-color: transparent;
+        border-radius: 5px;
+         box-shadow: 0 0 10px black,
+                     0 0 20px black,
+                     0 0 40px black;
+    }
+    #box5:hover{
+      
+        color:white;
+        box-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff; 
+        cursor: pointer;
+    }
+    #i12{
+        font-size: 400%;
+        margin-left: 20%;
+    }
+    #h57{
+        font-size: 50%;
+    
+        margin-left: 20%;
+    }
+    
+    #box6{
+       
+        height: 95%;
+        width: 140%;
+        color: white;
+        background-color: transparent;
+        border-radius: 5px;
+         box-shadow: 0 0 10px black,
+                     0 0 20px black,
+                     0 0 40px black;
+    }
+    #box6:hover{
+      
+        color: white;
+        box-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff;
+    
+        cursor: pointer;
+    }
+    #i13{
+        font-size: 400%;
+        margin-left: 20%;
+    }
+    #h58{
+        font-size: 50%;
+       
+       margin-left: 20%;
+    }
+    #m7{
+        font-size: 50%;
+        height: 10%;
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 4%;
+        padding-top: 1%;
+        background-color:#22668D;
+        box-shadow: 0 0 10px black,
+                    0 0 80px black;
+    }
+    #info{
+        text-align: center;
+    }
+    #dvc{
+        font-size: 30%;
+        position: relative;
+        left: 75%;
+        top: -60;
+    }
+    
+    #ask{
+        font-size: 20%;
+    }
+    #botbtn{
+        margin-right: 90%;
+        background-color: transparent;
+        position: absolute;
+        top: 30%;
+        left: 4%;
+        position: fixed;
+      
+       
+    }
+    #botimg{
+        border-radius: 70px;
+    
+        height: 140%;
+        width: 140%;
+        animation: bot 1s linear infinite ;
+        box-shadow: 0 0 10px skyblue,
+                    0 0 20px skyblue,
+                    0 0 40px skyblue;
+     
+    }
+    #botimg:hover{
+        animation: none;
+    }
+    
+    
+    
+#bottomnav{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 2%;
+}
+    
+    
+    
+    .contact-tab {
+        font-size: 50%;
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        cursor: pointer;
+        z-index: 999;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-shadow: 0 0 10px black,
+                    0 0 20px black,
+                    0 0 40px black;
+     
+    }
+    
+    .contact-tab:hover {
+        background-color: #0056b3;
+    }
+    
+    
+    .contact-content {
+        font-size: 50%;
+        position: fixed;
+        top: 48%;
+        right: -250px;
+        transform: translateY(-50%);
+        background-color: #fff;
+        color: #333;
+        padding: 20px;
+        width: 200px;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease-in-out;
+    }
+    
+    
+    .contact-link {
+        font-size: 50%;
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    
+    .close-btn {
+
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+    }
+    
+    
+    #facilities{
+        padding-top: 7%;
+    }
+    #services{
+        padding-top: 2%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @keyframes bot {
+        from{scale: 1;}
+        to{scale: 1.2;}
+        
+    }
+    
+    
+    
+    
+    @keyframes autotyping {
+        from{width: 0;}
+        to{width: 100%;}
+        
+    }
+    
+
+  
+
+
+
+
+
+
+
+
+
+}
+
+
+
+

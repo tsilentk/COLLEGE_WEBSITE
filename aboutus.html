@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon"type="x" href="zcartoonasct.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>ABOUT US</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+                
+        #bar{
+    display: flex;
+    height: 5%;
+    width: 100%;
+    
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    border-bottom: 1px solid black;
+ 
+    background-color:#22668D;
+    border-radius: 10px;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+
+
+
+    opacity: 1;
+    position: fixed;
+    top: -2%;
+    z-index: 1000;
+
+    
+}
+#logo{
+   
+    height:100%;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 2%;
+    background-color: #FEFEDF;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#h21{
+    color: brown;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+    font-size: 250%;
+    text-shadow: none;
+    position: absolute;
+    top: -30%;
+    left: 3%;
+}
+#barlist{
+    background-color: #226B80;
+    border-radius: 10px;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    margin-top: .5%;
+    margin-left: 12%;
+    justify-content: space-around;
+  
+}
+#barlist h3{
+    color: white;
+    text-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    margin-top: 1%;
+    transition: all ease 0.1s;
+}
+#barlist h3:hover{
+    color: brown;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+    font-weight: 900;
+    font-size: 110%;
+}
+#icons{
+
+    display: flex;
+    width: 20%;
+    font-size: 180%;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 1.5%;
+
+    position: absolute;
+    top: 2%;
+    left: 75%;
+
+}
+#i1,#i2,#i3{
+    color:black;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i3:hover{
+    color: cornflowerblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+   color: skyblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+
+}
+#icons #i1:hover{
+    color: skyblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i2:hover{
+    color: rgb(211, 64, 38);
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+        header {
+            background-color: #226B80;
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            width: 100%;
+            margin-top: 3%;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 160px #fff;
+            position: fixed;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #226B80;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            top: 17%;
+          
+        
+           
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        
+        nav a:hover {
+            color: black;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+        
+        section {
+            padding: 20px;
+            padding-top: 12%;
+        }
+        
+        .image-container {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        h2 {
+            text-shadow: 0 0 10px black, 0 0 20px black, 0 0 40px black, 0 0 80px black;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black, 0 0 20px black, 0 0 40px black, 0 0 80px black;
+        }
+        
+        .placement-card {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .placement-card img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        
+        .placement-info {
+            flex: 1;
+            font-size: 100%;
+        }
+        
+        #profilepic {
+         width: 10%;
+         height: 10%;
+        }
+        
+        footer {
+            background-color: #226B80;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        @media (max-width: 768px) {
+            /* Define styles for screens with a maximum width of 768px (adjust as needed) */
+            nav {
+                flex-direction: column;
+                align-items: center;
+                top: 0;
+                position: relative;
+            }
+            
+            nav a {
+                margin: 10px 0;
+            }
+            
+            .image-container {
+                flex-direction: column;
+            }
+            
+            img {
+                max-width: 100%;
+            }
+            #bar{
+                display: none;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="bar">
+        <a href="index.html">  <img id="logo" src="zlogo.png" alt="">
+            <h2 id="h21">ASCT</h2></a>
+         <div id="barlist">
+            <a href="index.html"> <h3>HOME</h3></a>
+            <a href="index.html#facilities"><h3>FACILITIES</h3></a>
+            <a href="department.html"><h3>DEPARTMENTS</h3></a>
+            <a href="gallary.html"><h3>GALLARY</h3></a>
+            <a href="contactus.html"><h3>CONTACT US</h3></a>
+            <a href="index.html#services"><h3>SERVICES</h3></a>
+         </div>
+           <div id="icons">
+           <a href=""><i id="i1" class="ri-twitter-fill"></i></a>
+           <a href="https://www.instagram.com/asct_bhopal/"><i id="i2" class="ri-instagram-line"></i></a>
+           <a href="https://m.facebook.com/people/All-Saints-College-of-Technology-Bhopal/100066499428214/?locale=lv_LV"><i id="i3" class="ri-facebook-fill"></i></a>
+           <a href=""><i id="i3" class="ri-linkedin-fill"></i></a>
+           </div>
+    </div>
+    <header>
+        <h1>ABOUT US</h1>
+    </header>
+    <nav>
+        <a href="#THE FOUNDRESS">THE FOUNDRESS</a>
+        <a href="#THE CHAIRPERSON">THE CHAIRPERSON</a>
+        <a href="#THE DIRECTOR">THE DIRECTOR</a>
+        <a href="#THE PRINCIPAL">THE PRINCIPAL</a>
+        <a href="#DEAN ACADEMICS">DEAN ACADEMICS</a>
+        <a href="#MISSION & VISION">MISSION & VISION</a>
+      
+     
+    </nav>
+  
+    <section id="THE FOUNDRESS">
+        <h2>THE FOUNDRESS</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://www.asctbhopal.com/images/asct_foundress.jpg" alt="">
+                <div class="placement-info">
+                   <h3>IRIS C. AUER <br>
+                    Member Of The British Empire<br>
+                    1904-1998</h3>
+
+                    <h5>The most important thing I find
+
+                        In life, is how you use your mind.
+                        
+                        Think good and good will come to you
+                        
+                        And you'll be blessed the whole day through,
+                        
+                        Think kindly and everyone will be
+                        
+                        Happy in your company,
+                        
+                        Think love and all things will be sweet
+                        
+                        As flowers blooming at your feet,
+                        
+                        Think pure and you will have no fear
+                        
+                        For you will know that God is near.</h5>
+
+                
+                    
+                </div>
+            </div>
+        <p>Miss Iris Cynthia Philomene Auer came to India after she retired from the Principalship of her School in England. She founded All Saints' School in 1980. The acclaim that her School achieved is evident in the growth from seven pupils in July 1980 to the present numerical strength of over 2,500 pupils. Education and All Saints' for Miss Auer was not just a learning process or an institution but a mission where both teachers and students strove for academic excellence, and even more importantly, for the vibrant lessons of humanity, service, love and worship. A postgraduate in Psychology and with numerous degrees in Music, Miss Auer was a weaver of magic through her poetry, music, drama, dance, art and numerous other accomplishments of which she was both an exponent and a paragon. She entered into the soul of culture and the hearts of children. A deeply religious person, Miss Auer worshipped the Godhead as a true humanitarian. “It is in giving that we receive" was her favourite dictum and a mission statement for All Saints'. Education, Miss Auer advocated, is not only incomplete but meaningless without the active awareness, expression and display of cultural values and social responsibilities.
+
+            All School and College programmes of both learning and enjoyment aim “To the Highest," the motto of All Saints' which exemplifies its creed. The cadre of student leaders, house and inter-house competitions, exhibitions of project work, talent search opportunities through music, dance, elocution, drama, sports, karate, quiz-programmes, seminars etc. are all part of the system that provides students, as well as their teachers and parents, with opportunities to become achievers and winners certainly, but also to feel the thrill of sharing more in the fellowship of participation and support than in winning, more in a sense of belonging and loyalty than in attainment, in mutual trust and co-operation that brings with it a feeling of pride and exhilaration for school and college, inculcates patriotic sentiments and envisages national goals. It is therefore but natural for the students to be in the forefront in contributing to their country's need to alleviate the sufferings of the underprivileged, and in times of national crises, by sacrificing a material pleasure and earning their donations by doing a labour or love. The mind-set that such attitudes and work develop is the hallmark of Miss Auer's ideal of true education.
+            
+            It was an occasion of great pride for the students, staff, numerous friends and well-wishers and for Bhopal, when Miss Auer's capabilities as an educationalist and administrator both in precept and example were recognized in the award of Member of the British Empire accredited to her in the Queen of England's Birthday Honours List in 1989. Her Royal Highness, Princess Alexandra of Kent presented the award to Miss Auer in October of that year and a gala civic reception was accorded to Miss Auer after the ceremony.
+            
+            Miss Auer planned and actively worked to extend the ambit of education from School to College. In April 1996 she laid the foundation stone of All Saints' College at Gandhinagar, Bhopal. Miss Auer continued to direct and guide the course of All Saints' with a verve and excitement that was at once infectious and inspiring. Age to her was a quality of mind and not of years. Into her nineties, and now constantly in a wheelchair, her presence and acuity was a guiding force at all staff meetings and functions.
+            
+            Miss Auer left her earthly abode on 8th, August 1998 - significantly, on Raksha Bandhan Day. She was in her ninety fourth year. She taught everyone the art of living with the accent of her love. Her final resting place, as she had wished, is in the campus of All Saints' College at Gandhinagar and is, in all truth, called the Garden of Love. She gave her heart and soul not only to the children under her care but to India and was in turn rewarded with deep love and untold appreciation..</p>
+        
+
+             
+           
+        </div>
+    </section>
+    <section id="THE CHAIRPERSON">
+        <h2>THE CHAIRPERSON</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://www.asctbhopal.com/images/chairperson.jpg" alt="">
+                <div class="placement-info">
+                   <h3>MRS. KAISER ZAMAN <br>
+                    M.A. (OXON) B.Ed<br>
+                    Chairperson <br>
+                   All Saints’ Group of Institutions, Bhopal</h3>
+
+                    <h5>I am happy and gratified to have this opportunity to address our students, their parents, educationists and all who are committed to the cause and progress of education in our country.
+
+                        At ASCT and ASCE our aim is to train students to have a mastery of basic principles of engineering and science in order to become employable as well as become professionally qualified to take up careers in academic institutions, industry, research and social organizations. In order to succeed they are encouraged to go beyond the prescribed syllabi, become more organized and meticulous in their studies and allocate time to develop talents and activity which stimulate their intellects and are also enjoyable.
+                        
+                        The first task of a student is to study the subject well just as the prime responsibility of a teacher is to make the subject come alive. At the same time we cannot leave the social interpretation and application of education wholly to principals, parents, pamphlets or chance. If the public is to value scientific research its worth must be made more apparent. For this teaching and learning must develop both a science and a philosophy. The techniques call for scientific study of methods and ethical study of ends. The student must be encouraged to be open-minded, critical and constructive. Opportunities need to be created for a training of mind, body, hand and eye, of purpose, leadership, integrity in work and loyalty to a cause that certainly includes, but goes beyond the means of economic satisfaction. All scientific and educational exercise must educate for citizenship, for the duties of parenthood and social living, for leisure as well as for the interpretation of life and world values.
+                        In order to compete successfully and to flourish in today's technological scenario it is vital for engineering students to avail of every opportunity that provides exposure and experimentation to augment their knowledge base, promote potential and encourage enterprise.In an era of globalization and rapid technological advancement, technical education must adhere to the changing times in order to look ahead into the future. Technology has penetrated systems not only of education but of social networks, governance, business and even personal domains
+                    </h5>
+
+                
+                    
+                </div>
+            </div>
+        <p>The student fraternity has unprecedented opportunities and avenues to showcase their competencies provided they make full and proper use of them. They are doubly blessed because although they can justifiably claim to be part of the global community, it is our Indian values and traditions that will, in the final analysis, guide them to the Highest.
+
+            The world of technology is moving at a faster pace than we can envisage. What is taught and learnt today provides a base and impetus for tomorrow's needs and discoveries. We at ASCT endeavour to provide our prospective engineers with an education where inquiry is pushed forward, research verified and perfected, error exposed by the meeting of mind with mind, knowledge with knowledge. Communication through interchange of ideas, comparisons and adjustments of one technology with another gives the students a platform to appreciate and promote the value and utility of their respective areas of study.
+            
+            A special occasion in 2010 was the visit of Dr. Alice Prochaska, Principal and Dr. Julie Hage, Head of Development of Somerville College, Oxford University, to New Delhi in November. Her proposals to collaborate with us is a matter of privilege and pride and speaks volumes for the verve of the Indian intellect and the esteem in which our country is held. I had wonderful meetings with them and meaningful discussions following which we are in the process of initiating a modus operandi on the subject.
+            
+            India has emerged as one of the major service providers to global ventures. To consolidate our merits we must ensure that we "walk the talk" while we envisage our students as the future of our great country. However, I strongly feel, and at times with considerable apprehension, that educators and "the system" are not doing enough to promote the viability of technical progress for rural development and poverty alleviation, only through which can students contribute effectively towards the larger task of nation-building. It takes time to change mind sets and alter long-established systems, but it is heartening that the process is shifting from scholastic assessments to aptitude testing thereby integrating competencies by introducing and giving adequate weightage to skill-based components in subjects of study. In addition, what has come to be known as the "knowledge industry" is as much dependent on technical skills as on the ability to empathise, relate, influence and use emotional intelligence.
+            
+            The highlight of the year 2013 was the unforgettable visit by the former President of India, His Excellency, Dr. APJ Abdul Kalam to All Saints' College of Technology. His address and interaction with our students and faculty have given credence to our vision and mission and reinforced our determination to build India of his and our dreams. Dr. Kalam's advice for Providing Urban Amenities in Rural Areas will prove to be the catalyst for the fulfilment of this admirable venture. PURA - its acronym - would seek, and I quote from Dr. Kalam's inspiring address, to create "Physical, Electronic, Knowledge connectivities leading to the Economic development of the rural region. With this combined and planned intervention of infrastructure, digital technology, information and enterprise, we can select a cluster of about 20 to 50 villages, which share core competencies and empower those using local enterprises. I would like to suggest here, that the All Saints' College of Technology may like to pursue the implementation of one such PURA Complex covering around 50 to 100 villages on the outskirts of Bhopal utilizing the potential of the youth of this College. This PURA will be called as All Saints' PURA which would empower local villages in this region. The work on PURA will facilitate faculty and students' intensive programme in rural societal transformation".
+            
+            Such an ambitious and excitingly adventurous initiative cannot be undertaken single-handedly. I would humbly suggest that that the concept of PURA be incorporated in the curriculums of R.G.P.V. and N.I.T.T.T.R. and that the accomplishments in graded steps- University-wise, Institute-wise, College-wise and student-wise - be included in the general and particular profile of the adherents of this scheme as an essential adjunct in the Degree and other certificates given by our premier organization.
+            
+            It is my earnest plea that our young scientists need to interact with the rural sector and that curricule of technical colleges should, like the medical services, include a rural area-intensive programme. Government schemes of taking the cyber world to villages would get a tremendous boost and reliable feedbacks by such exercises. Over and above this the practical awareness of the enormous possibilities of utilizing technology for upgrading village life and the ensuing exposure and sensitization to the needs of the inhabitants would be the best method of inculcating communication skills and personality development. We need to focus on what can and should be accomplished to implement policies of governance and international funding. India is today storming the outsourcing market, but in the ultimate analysis, real success will be measured by the core services rendered, directly or indirectly, to the social and economic uplift of our country.
+            
+            Individual and institutional progress and achievements must be practically linked with the development of the social sector. Predictably, Social Engineering has become the buzzword in the corporate world. Our mission is to motivate our prospective engineers to widen the scope of their work and influence which in turn will enable them to experience the joy and worth of constructive intellectual achievements and fulfil their roles as citizens of our country. This vision is the legacy of the late Miss I. C. Auer MBE, the dynamic foundress of our various educational ventures. Her ideals and ethics-based educational system continue to guide us in our work and are more relevant than ever in today's academic scenario. She had great faith and love for our youth which has been justified by the achievement of our alumni in all parts of the world. We dedicate ourselves to her vision and inspiration.
+            
+            The members of the Governing Committee and I offer our good wishes to our students and our new entrants. We commend the Principal, Vice-Principal, Faculty and Staff for their diligence, dedication and loyalty. I re-iterate Miss Auer's dictum "God will not ask what rank, gain or praise you received but whether you gave of your best to your work, with whom you worked and for whom you worked." That is real success.
+            </p>
+        
+
+             
+           
+        </div>
+    </section>
+    <section id="THE DIRECTOR">
+        <h2>THE DIRECTOR</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://www.asctbhopal.com/images/director_asct.jpg" alt="">
+                <div class="placement-info">
+                   <h3>Dr. Zafar MEHDI<br>
+                    (Director)<br>
+                    B.E. (Hons) Mechanical Engineering University of Jabalpur <br>
+                    D.R.C. University of Strath Clyde, Glasgow <br>
+                    Ph.D. University of Wales, Cardiff
+
+                </h3>
+
+                    <h5>Kurwai Education Society has been engaged in spreading education in Madhya Pradesh for the past 34 years and is well known for its quality and dedication. We have maintained the same standards in our Engineering Colleges. Our students have excelled in University examinations as well as in several competitive forums and in selection by reputed companies. We also update our students with the use of modern tools and technological innovations taking place worldwide. We invite the student community to participate in and share their innovative ideas through this website.
+                    </h5>
+
+                
+                    
+                </div>
+            </div>
+        <p>50 years experience in Industry and the academic field. He obtained Ph.D. in Automatic Controls from the University of Wales (U.K.) in 1971, D.R.C. in Production Engineering from Glasgow (U.K.) in 1967 and B.E. (Hon.) from Jabalpur in 1963. He was with MANIT, Bhopal, UWIST (U.K.), IIT Kanpur, HAL Lucknow and Nasik, BHEL Bhopal, RKDF and Vedica Institute. He has published more than fifty papers in National and International Journals and is a member of ASME, IEEE, ISTE, fellow of IEI and was chairman of Fluid Power committee of BIS.</p>
+        
+
+             
+           
+        </div>
+    </section>
+
+    <section id="THE PRINCIPAL">
+        <h2>THE PRINCIPAL</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://www.asctbhopal.com/images/principal_asct.jpg" alt="">
+                <div class="placement-info">
+                   <h3>Prof. A. H. SAIFEE<br>
+                    (PRINCIPAL)<br>
+                    Post Graduate in Engineering <br>
+                    From Barkatullah University  <br>
+                    Ph. D. from MANIT.
+
+                </h3>
+
+                    <h5>
+                    </h5>
+
+                
+                    
+                </div>
+            </div>
+        <p>Prof. Saifee has a wide and long experience of 33 years plus of working with many Nav Ratna industries and multinationals in various capacities. He has several technical papers to his credit. He has contributed laudably to product development, import substitution, development of 100% indigenous online mudlogging unit used for oil well exploration and drilling on and off shore which proved to be much better and cheaper compared to the then available imported units. Another milestone project was the gun control system for Arjuna tank for BHEL Bhopal that had an accuracy 30 times better than the imported German make. In his individual capacity he is responsible for numerous export projects such as setting up of the only tomato ketchup (3.5 ton per day) plant at Tashkent, fruit and juice plant at Ashgabad etc. He is also a consultant to various multinationals such as Siemens Ltd. etc. He is Professor at All Saints’ College of Technology Bhopal since 2008. He has guided various M. Tech.  dissertations and is active in the field of academics.</p>
+        
+
+             
+           
+        </div>
+    </section>
+
+    <section id="DEAN ACADEMICS">
+        <h2>DEAN ACADEMICS</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="zdean.jpg" alt="DEAN">
+                <div class="placement-info">
+                   <h3>Prof. DINESH RAMCHANDANI<br>
+                    (DEAN ACADEMICS)<br>
+                   
+                </h3>
+
+                    <h5> If you wish to get sucess in life, <br>
+                         Then do sprinkle sometime to grow the relations <br>
+                        As your biggest asset.
+                    </h5>
+
+                
+                    
+                </div>
+            </div>
+        <p>Our institution has long been a beacon of academic excellence, innovation, and community engagement, and I am honored to lead our dedicated faculty, staff, and students on this remarkable journey of learning and growth.
+
+            At the heart of our institution's mission is a commitment to nurturing the minds and talents of our students, empowering them to become future leaders, critical thinkers, and responsible global citizens. We prioritize academic rigor and foster a vibrant and inclusive learning environment where diversity of thought, culture, and background are celebrated.
+            
+            Our institution stands at the forefront of research and innovation, contributing to advancements in various fields. We encourage our faculty to pursue cutting-edge research and ensure that our students have access to the latest knowledge and technologies.
+            
+            Beyond academics, we place a strong emphasis on character development, ethics, and community service. We believe in producing well-rounded individuals who are not only proficient in their chosen fields but also compassionate and socially responsible.
+            
+            As Dean, I am committed to upholding our institution's rich legacy and advancing its mission to new heights. Together, we will continue to excel in all aspects of education, research, and community engagement.
+            
+            I look forward to working closely with each one of you to create a brighter future for our institution and its stakeholders.
+            
+         
+            
+            
+            
+            
+            </p>
+        
+
+             
+           
+        </div>
+    </section>
+    
+    <section id="MISSION & VISION">
+        <h2>MISSION & VISION</h2>
+        <div class="container">
+
+
+            <h3>MISSION</h3>
+            <h4>
+             Achieving excellence in Technical Education, Social Service, Indian Cultural Values and National Goals are an essential focus of the ethos of All Saints’ College Of Technology. Emphasis is laid on developing inter–personal communication, teamwork and presentation of skills through seminars and workshops on the latest technology to assist in the development of a student's overall personality.</h4>
+             <div class="image-container">
+ 
+                 <img src="https://png.pngtree.com/thumb_back/fh260/background/20220620/pngtree-mountainous-road-with-the-word-mission-inscribed-vision-visionary-way-photo-image_31857844.jpg" alt="">
+               
+            </div>
+            <h3>Vision</h3>
+            <h4>Sharing a better future for mankind by developing efficient, effective and socially responsible individuals and organizations for the peace and the betterment of the Nations and the World.</h4>
+            <div class="image-container">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBtLXYM7P4lGO_EwegBMi86DhzNt1VeYD__A&usqp=CAU" alt="">
+              
+           </div>
+   
+           
+   
+
+             
+           
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ASCT BHOPAL. All rights reserved.</p>
+      </footer>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

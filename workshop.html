@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon"type="x" href="zcartoonasct.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>ASCT WORKSHOP</title>
+    
+
+
+    <style>
+         *{
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family:sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+    text-decoration: none;
+}
+#bar{
+    display: flex;
+    height: 5%;
+    width: 100%;
+    z-index: 100; 
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    border-bottom: 1px solid black;
+ 
+    background-color:#22668D;
+    border-radius: 10px;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    
+
+
+    opacity: 1;
+    position: fixed;
+    top: -2%;
+    z-index: 1000;
+
+    
+}
+#logo{
+   
+    height:100%;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 2%;
+    background-color: #FEFEDF;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#h21{
+    color: brown;
+    font-size: 250%;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+    position: absolute;
+    top: -30%;
+    left: 3%;
+}
+#barlist{
+  
+    border-radius: 10px;
+    width: 60%;
+    height: 90%;
+    display: flex;
+
+    margin-left: 12%;
+    justify-content: space-around;
+  
+}
+#barlist h3{
+    color: white;
+    text-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    transition: all ease 0.1s;
+}
+#barlist h3:hover{
+    color: brown;
+    font-size: 110%;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons{
+
+    display: flex;
+    width: 20%;
+    font-size: 180%;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 1.5%;
+
+    position: absolute;
+    top: 2%;
+    left: 75%;
+
+}
+#icons #i3:hover{
+    color: cornflowerblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+
+}
+#i1,#i2,#i3{
+    color:black;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i1:hover{
+    color: skyblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i2:hover{
+    color: rgb(211, 64, 38);
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+
+
+
+        header {
+            background-color: #226B80;
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            width: 100%;
+            margin-top: 3%;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 160px #fff;
+            position: fixed;
+            z-index: 100; 
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #226B80;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            top: 15%;
+           z-index: 100; 
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(216, 208, 208, 0.2);
+        }
+        nav a:hover{
+            color: black;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+        section {
+            padding: 20px;
+            padding-top: 12%;
+        }
+        .image-container {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+        }
+        img {
+            width: 30%;
+            height: auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black,    
+                        0 0 80px black;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+
+       
+        }
+
+        .placement-card {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: transparent;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .placement-card img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .placement-info {
+            flex: 1;
+            font-size: 200%;
+            background-color: transparent;
+        }
+        #profilepic{
+            height: 10%;
+            width: 10%;
+        }
+        h2{
+            color: rgb(33, 117, 150);
+
+        }
+        li{
+            color: rgb(17, 78, 102);
+        }
+        summary{
+            color: black;
+        }
+        footer {
+            background-color: #226B80;
+            color: #fff;
+            padding: 10px;
+              text-align: center;
+         }
+                     /* Add a media query for smaller screens */
+                     @media (max-width: 768px) {
+                header {
+                    padding: 10px; /* Adjust padding for smaller screens */
+                }
+                   
+                nav {
+                flex-direction: column;
+                align-items: center;
+                top: 0;
+                position: relative;
+            }
+            
+            nav a {
+                margin: 10px 0;
+                font-size: 100%;
+            }
+                section {
+                    padding-top: 20%; /* Increase the top padding for smaller screens */
+                }
+                h2{
+                    font-size: 70%;
+            color: rgb(33, 117, 150);
+
+        }
+        #bar{
+                display: none;
+            }
+
+            }
+    </style>
+</head>
+<body>
+    <div id="bar">
+        <a href="index.html">  <img id="logo" src="zlogo.png" alt="">
+            <h2 id="h21">ASCT</h2></a>
+         <div id="barlist">
+            <a href="index.html"> <h3>HOME</h3></a>
+            <a href="index.html#facilities"><h3>FACILITIES</h3></a>
+            <a href="department.html"><h3>DEPARTMENTS</h3></a>
+            <a href="gallary.html"><h3>GALLARY</h3></a>
+            <a href="contactus.html"><h3>CONTACT US</h3></a>
+            <a href="index.html#services"><h3>SERVICES</h3></a>
+         </div>
+           <div id="icons">
+           <a href=""><i id="i1" class="ri-twitter-fill"></i></a>
+           <a href="https://www.instagram.com/asct_bhopal/"><i id="i2" class="ri-instagram-line"></i></a>
+           <a href="https://m.facebook.com/people/All-Saints-College-of-Technology-Bhopal/100066499428214/?locale=lv_LV"><i id="i3" class="ri-facebook-fill"></i></a>
+           <a href=""><i id="i3" class="ri-linkedin-fill"></i></a>
+           </div>
+    </div>
+    <header>
+        <h1>ASCT WORKSHOP</h1>
+    </header>
+    <nav>
+        <a href="#AutoCAD">AutoCAD</a>
+        <a href="#WEB DEVELOPMENT">WEB DEVELOPMENT</a>
+        <a href="#PYTHON">PYTHON</a>
+        <a href="#Automobile Prototyping">AUTOMOBILE PROTOTYPING</a>
+        <a href="#IC Engines">IC ENGINES</a>
+        <a href="#BRIDGE DESIGN">BRIDGE DESIGN</a>
+        <a href="#Building Analysis and Planning">BUILDING ANALYSIS & PLANNING</a>
+        <a href="#Automated Street Lighting">AUTOMATED STREET LIGHTENING</a>
+        <a href="#Gesture Based Robotics">GASTURE BASED ROBOTICS</a>
+        <a href="#MANY MORE"><i>and many more workshops</i></a>
+        
+
+       
+     
+    </nav>
+    <section id="AutoCAD">
+        
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://logicproindia.com/wp-content/uploads/2019/02/autocad-logo.jpg" alt="HOD">
+                <div class="placement-info">
+                 
+                    <h2>AutoCAD</h2>
+                    
+                </div>
+            </div>
+        <p>AutoCAD is a fundamental tool in engineering with profound importance in the design and drafting processes. Its versatility and precision make it indispensable in various engineering disciplines. Engineers use AutoCAD to create detailed 2D and 3D drawings, schematics, and blueprints, which are essential for designing buildings, machinery, electrical circuits, and infrastructure. It aids in visualizing complex structures, optimizing designs, and ensuring accuracy, thereby reducing errors and saving time and resources. AutoCAD also facilitates collaboration, enabling teams to work on the same project simultaneously. In summary, AutoCAD streamlines the engineering design process, enhances productivity, and promotes efficient communication, making it an invaluable asset in the field of engineering</p>
+        <div class="image-container">
+
+             <img src="https://5.imimg.com/data5/BE/DQ/JM/SELLER-76702051/civil-auto-cad-diploma-course.jpg" alt=""> 
+            <img src="zautocad.jpg" alt="">
+            <img src="https://i.all3dp.com/workers/images/fit=scale-down,w=1200,h=675,gravity=0.5x0.5,format=auto/wp-content/uploads/2021/12/09100610/autocad-and-inventor-are-both-cad-programs-develop-autodesk-211125.jpg" alt="">
+           
+        </div>
+    </section>
+
+    <section id="WEB DEVELOPMENT">
+        
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://www.finesofttechnologies.com/wp-content/uploads/2019/03/Web-Development-2.png" alt="HOD">
+                <div class="placement-info">
+                 
+                    <h2>WEB DEVLOPMENT</h2>
+                    
+                </div>
+            </div>
+        <p>Web development is a critical discipline in engineering, bridging the gap between technology and user experience. It encompasses the design, creation, and maintenance of websites and web applications. In engineering, web development plays a pivotal role by facilitating communication, data management, and collaboration. Engineers utilize web development to create online platforms for project management, data analysis, and real-time monitoring. These web-based tools streamline workflows, enhance efficiency, and promote collaboration among team members located in different geographical areas. Furthermore, web development is vital for showcasing engineering projects, sharing research findings, and disseminating knowledge to a global audience, advancing the field and fostering innovation.</p>
+        <div class="image-container">
+
+             <img src="https://www.globalmediainsight.com/asset/images/website-development.jpg" alt=""> 
+            <img src="zwebdev.jpg" alt="">
+            <img src="https://www.opstechsolution.com/assets/images/about/web-design.png" alt="">
+           
+        </div>
+    </section>
+
+
+    <section id="PYTHON">
+        
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://static.vecteezy.com/system/resources/thumbnails/012/697/295/small_2x/3d-python-programming-language-logo-free-png.png" alt="HOD">
+                <div class="placement-info">
+                 
+                    <h2>PYTHON</h2>
+                    
+                </div>
+            </div>
+        <p>Python, a versatile and widely adopted programming language, plays a pivotal role in engineering applications. Its readability and extensive libraries make it ideal for engineers across various disciplines, from mechanical and civil engineering to data science and software development. Python facilitates numerical and scientific computing through libraries like NumPy and SciPy, aiding complex simulations and data analysis. Engineers employ it for automation and control systems, optimizing industrial processes and streamlining repetitive tasks. Additionally, Python's application in web development and machine learning empowers engineers to create smart systems, enhancing efficiency and innovation. Its accessibility and adaptability make Python an indispensable tool for engineers worldwide.
+        </p>
+        <div class="image-container">
+
+             <img src="https://pythonweb.org/wp-content/uploads/2021/04/Programming-HD-Wallpapers-Python-And-Other-Coding.jpg" alt=""> 
+            <img src="zpython.jpg" alt="">
+            <img src="https://cache.careers360.mobi/media/article_images/2020/12/24/python-programming-course-beginners-guide-pursue-career.webp" alt="">
+           
+        </div>
+    </section>
+
+
+    <section id="Automobile Prototyping">
+        
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://media.istockphoto.com/id/1277282099/vector/automobile-engineers-working-on-electric-car-battery-cell-pack-platform-chassis.jpg?s=612x612&w=0&k=20&c=WdbBxHFYmhibHxlV_XTDB1RvDuFgvfBv70w7KO-W4TQ=" alt="HOD">
+                <div class="placement-info">
+                 
+                    <h2>AUTOMOBILE PROTOTYPING</h2>
+                    
+                </div>
+            </div>
+        <p>Automobile engineering is a fascinating career path and students pursuing mechanical engineering can also undergo this training to develop the necessary skills required to work in the automobile industry. The world is adapting to more innovative means of transportation from self-driving cars to pod-based vehicles, and there is a great demand for mechanical engineers in the automobile industry who can work on these technologies.
+
+            By attending this mechanical workshop you will practically learn about the concepts of automobile systems like transmission, suspension, powertrain, steering, locomotion and chassis design etc. Through this training program, you will develop a deeper understanding about the automobile engineering and the skills required to work in the automobile industry.
+        </p>
+        <div class="image-container">
+
+             <img src="https://npelectronics.net/wp-content/uploads/2022/09/prototyping-banner-1024x370-1.webp" alt=""> 
+            <img src="https://blogs.sw.siemens.com/wp-content/uploads/sites/6/2020/12/image-2-1024x576.png" alt="">
+            <img src="https://vection-cms-prod.s3.eu-central-1.amazonaws.com/Immagine1_16c935ec76.jpg" alt="">
+           
+        </div>
+    </section>
+
+
+    <section id="IC Engines">
+        
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://icon-library.com/images/engine-icon-png/engine-icon-png-12.jpg" alt="HOD">
+                <div class="placement-info">
+                 
+                    <h2>IC ENGINES</h2>
+                    
+                </div>
+            </div>
+        <p>IC engines or Internal Combustion Engines are the most widely used engine mechanism in the automobile industry. These engines are capable of producing immense power in contrast to their size and weight. Almost all the automobiles that we see today run using this engine and it is essential for mechanical engineers to learn and get skilled in it to improve their job prospects.
+
+            This will be an ideal course for mechanical engineers who want to get hold of the concepts involved in the automobile industry. By attending this mechanical workshop you will practically learn the concepts behind the engine control unit, sensors, and actuators and you will also learn to assemble & dismantle IC engines so as to know the internal working mechanisms.
+        </p>
+        <div class="image-container">
+
+             <img src="https://w0.peakpx.com/wallpaper/320/821/HD-wallpaper-car-engine-auto-mechanical-engine-car.jpg" alt=""> 
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/773/1004/desktop-wallpaper-latest-of-vehicles-diesel-engine-diesel-engine-thumbnail.jpg" alt="">
+            <img src="https://t4.ftcdn.net/jpg/05/87/30/75/360_F_587307567_2bcPfyZgQ8Gle7gzbZtG3Hhec9x2B6gs.jpg" alt="">
+           
+        </div>
+    </section>
+
+    <section id="BRIDGE DESIGN">
+        
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://static.vecteezy.com/system/resources/thumbnails/024/083/480/small_2x/one-continuous-line-drawing-of-bridge-design-illustration-bridge-architecht-in-simple-linear-style-construction-design-concept-illustration-vector.jpg" alt="HOD">
+                <div class="placement-info">
+                 
+                    <h2>BRIDGE DESIGN</h2>
+                    
+                </div>
+            </div>
+        <p>Bridge Design is a vital topic of study in Civil Engineering. In the Bridge Design Workshop, participants will design and fabricate their own bridge. The bridge model made by participants can take up to 1000 times the self-weight.The workshop includes instruction on the key structural components of Structural engineering and bridge construction – beams, arches, trusses, suspensions, and test for maximum load.
+        </p>
+        <div class="image-container">
+
+             <img src="https://t4.ftcdn.net/jpg/03/06/09/75/360_F_306097534_3r6wLM7fDLSJZmFa1RiLglTunx5s7TI1.jpg" alt=""> 
+            <img src="https://www.hdrinc.com/sites/default/files/styles/hero/public/2022-09/bridge-to-model-illustration-d2100-1055.jpg?itok=6c2KRuZB" alt="">
+            <img src="https://civildigital.com/wp-content/uploads/2014/03/Sutong-Bridge-china.jpg" alt="">
+           
+        </div>
+    </section>
+
+
+
+    <section id="Building Analysis and Planning">
+        
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://static.vecteezy.com/system/resources/thumbnails/024/083/480/small_2x/one-continuous-line-drawing-of-bridge-design-illustration-bridge-architecht-in-simple-linear-style-construction-design-concept-illustration-vector.jpg" alt="HOD">
+                <div class="placement-info">
+                 
+                    <h2>BUILDING ANALYSIS & PLANNING</h2>
+                    
+                </div>
+            </div>
+        <p>Structural engineering deals with the analysis and design of structures. It helps engineers to understand the behavior of a structure when subjected to varied loads and design an efficient structure accordingly.
+
+            The design of tall buildings essentially involves conceptual design, approximate analysis, preliminary design and optimization to safely carry different loads acting on the structure. The structural design for a skyscraper must ensure that the building is able to stand up safely, able to function without excessive deflections or movements which may cause fatigue of structural elements, cracking or failure of fixtures, fittings or partitions, or discomfort for occupants.
+            
+            As part of this training program, you will also learn about Construction Project Management (CPM) which exposes you to the concepts & methodologies behind scheduling, planning, monitoring, controlling a construction project. Apart from knowing the theoretical concepts, you will also learn to manage a construction project by working on an industrial grade software.
+            
+            Construction industry is one of the largest industries in the world, and one that has the highest stakes. Construction project management is the art of undertaking a construction project to meet its cost, time and quality deadlines in a sustainable way.
+            
+            In short, with this training program you will be able to design a tall structure and understand different stages of a construction project management.
+        </p>
+        <div class="image-container">
+
+             <img src="https://www.projectmanager.com/wp-content/uploads/2022/07/220726-BLOG-SiteAnalysis.jpg" alt=""> 
+             <img src="ZCIVIL.jpg" alt="">
+            <img src="https://www.scottishconstructionnow.com/uploads/New%20Russell%20House%20Student%20Visit%20%2826%29.jpg" alt="">
+           
+           
+        </div>
+    </section>
+
+
+
+    <section id="Automated Street Lighting">
+        
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUm0NSGHLrhqub5gaUxuMguWXJ409phWbwhgz6VWuiCsl5jE7ae0nR_7XRJWzQwnQh5fA&usqp=CAU" alt="HOD">
+                <div class="placement-info">
+                 
+                    <h2>AUTOMATED STREET LIGHTENING</h2>
+                    
+                </div>
+            </div>
+        <p>Internet of Things, or IoT in short, is the internetworking of physical devices like sensors, motors or simply a smart device and linking them to cloud, so as to get updates remotely from almost anywhere. IoT has promising applications for smart homes, wearable devices, smart cities, connected cars and more.
+
+            This course introduces you to the amazing world of IoT and its fascinating applications. Using an Arduino board and an LDR sensor, you will develop an electronic device that automatically switches the street light ON and OFF based on the amount of sunlight present. This is one of the key components of smart cities where energy will be used very efficiently by turning the streetlights ON and OFF at the right time as needed. The system will have an LDR sensor that detects the light intensity continuously and sends data to the Arduino. The data will be sent to the cloud for storage and analysis where reports can be generated to show the duration when lights are ON, the amount of power consumed and saved.
+            
+            Apart from gaining practical skills on Internet of Things technology, you will also learn about Arduino, Arduino programming, interfacing sensors with Arduino and calibrating them by doing this course.
+        </p>
+        <div class="image-container">
+
+             <img src="https://hub.beesmart.city/hubfs/blogposts/from-other-websites-editorial-use/multiple-benefits-of-smart-lighting-solutions-in-smart-cities.jpg" alt=""> 
+             <img src="https://www.mokosmart.com/wp-content/uploads/2022/07/What-is-smart-street-lighting-using-IoT.webp" alt="">
+            <img src="https://i1.wp.com/www.neevenergy.com/wp-content/uploads/2018/10/Smart-city-connectivity-01.jpg?fit=536%2C484&ssl=1" alt="">
+           
+           
+        </div>
+    </section>
+
+
+
+    <section id="Gesture Based Robotics">
+        
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://cdn.sanity.io/images/7p2whiua/production/669a6ab9c47434c1ea95abd264c20cadfcea5d09-2048x1536.jpg?w=900&auto=format" alt="HOD">
+                <div class="placement-info">
+                 
+                    <h2>GASTURE BASED ROBOTICS</h2>
+                    
+                </div>
+            </div>
+        <p>Gesture Based Robotics (also known as Accelerometer Controlled Robotics) deals with robots which involve human-machine interaction - where a robot is controlled through hand movements sensed by an accelerometer.
+
+            The workshop helps participants understand the concepts and applications of an accelerometer sensor, microcontrollers and other electronic components used in Robotics. It includes practical training on building robots based on gesture recognition technology, providing students a glimpse into Human Machine Interaction technologies.
+        </p>
+        <div class="image-container">
+
+             <img src="https://images.squarespace-cdn.com/content/v1/5cd3f20a16b6404a21335f2e/1567503354530-UA3P8ME1LUF103SE0R5A/Topic+header12.jpg" alt=""> 
+             <img src="https://d1g9yur4m4naub.cloudfront.net/images/Article_Images/ImageForArticle_820_16521786758113510.jpg" alt="">
+            <img src="https://www.nextind.eu/wp-content/uploads/tagtigon-wearables-iot-next-industries.jpg" alt="">
+           
+           
+        </div>
+    </section>
+
+
+    <section id="MANY MORE">
+        <div class="placement-card">
+              
+      
+            <div class="placement-info">
+                
+               
+             
+                <h2> & many more workshops</h2>
+                <ul>
+                    <li> <details>
+                        <summary>Civil Engineering</summary>
+                        <ul>
+                            <li>Survey Camp using Total Station Workshop</li>
+                            <li>Foundation Engineering and Analysis Workshop</li>
+                            <li>Building Information Modeling (BIM) Workshop</li>
+                            <li>Transportation Engineering Workshop</li>
+                            <li>Construction Project Management Workshop</li>
+                        </ul>
+                        </details>
+                     </li>
+    
+                     <li> <details>
+                        <summary>Mechanical Engineering</summary>
+                        <ul>
+                            <li>Gear Train Design using Autodesk Inventor Workshop</li>
+                            <li>CNC Machine using Arduino Workshop</li>
+                            <li>Summer Training Program on IC Engine and Automobile Prototyping</li>
+                            <li>Glider Making Workshop</li>
+                            <li>Animatronic Hand Workshop</li>
+                        </ul>
+                        </details>
+                     </li>
+    
+                     <li> <details>
+                        <summary>Electrical & Electronics Engineering</summary>
+                        <ul>
+                            <li>Automated Street Lighting using IoT Workshop</li>
+                            <li>Home automation using IoT Workshop</li>
+                            <li>Solar and Smart Energy Systems Workshop</li>
+                            <li>Gesture Based Robotics Workshop</li>
+                            <li>Biometric Authentication Workshop</li>
+                        </ul>
+                        </details>
+                     </li>
+    
+                     <li> <details>
+                        <summary>Computer Science Engineering</summary>
+                        <ul>
+                            <li>Digital Marketing Workshop</li>
+                            <li>Machine Learning Workshop</li>
+                            <li>Ethical Hacking Workshop</li>
+                            <li>Cloud Computing Workshop</li>
+                            <li>Data Analytics using R Workshop
+                            </li>
+                        </ul>
+                        </details>
+                     </li>
+    
+    
+    
+                </ul>
+               
+                
+            </div>
+        </div>
+    
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 ASCT BHOPAL. All rights reserved.</p>
+      </footer>
+  
+
+
+
+</body>
+</html>
+  

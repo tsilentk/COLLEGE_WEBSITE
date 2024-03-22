@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+      *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family:sans-serif;
+
+      }
+      html,body{
+        height: 100vh;
+      }
+      #header{
+        height: 10%;
+        background-color:black;
+        justify-content: space-between;
+         display: flex;
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+      nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1%;
+      }
+      nav a{
+        color:white;
+        font-weight: 800;
+        text-shadow: 0 0 10px #fff,
+                    0 0 30px #fff,
+                    0 0 50px #fff;
+
+        transition: all ease 0.1s;
+      }
+      nav a:hover{
+        cursor: pointer;
+        color: crimson;
+        font-size: 102%;
+        text-shadow: 0 0 10px crimson,
+                     0 0 30px crimson,
+                     0 0 50px crimson;
+      }
+      h1{
+        color: #fff;
+        margin-top: -1%;
+        font-weight: 800;
+        text-shadow: 0 0 10px #fff,
+                    0 0 30px #fff,
+                    0 0 50px #fff;
+      }
+      #main{
+  
+      background-color:black;
+      height: 90%;
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      }
+      #left{
+        height: 100%;
+        width: 50%;
+       padding-left: 2%;
+       padding-top: 3%;
+        background-color:black;
+      }
+      #img1{
+        background-color: transparent;
+        scale: 1.5;
+        position: relative;
+        top: 14%;
+        right: -10%;
+        z-index: 100;
+        animation:imgslide 1s forwards ease-in-out 0.5s ;
+
+      }
+      #incline{
+         display: flex;
+        
+     
+        clip-path: polygon(0 83%, 73% 83%, 100% 100%, 0% 100%);
+        background-color:crimson;
+        z-index: 10;
+        height: 100%;
+        width: 75%;
+        position: absolute;
+        top: 0%;
+      }
+      #spn1{
+        
+        color:crimson;
+        text-shadow: 0 0 10px crimson,
+                     0 0 30px crimson,
+                     0 0 50px crimson;
+  
+      }
+      #spn2{
+        font-size: 150%;
+        color: crimson;
+        text-shadow: 0 0 7px crimson,
+                     0 0 15px crimson;
+                     display: inline-block;
+        overflow: hidden;
+        width: 0;
+       white-space: nowrap;
+       animation: autotyping 2s forwards ;
+                    
+      }
+      #spn3{
+        font-size: 150%;
+        color: crimson;
+        text-shadow: 0 0 7px crimson,
+                     0 0 15px crimson;
+                     display: inline-block;
+        overflow: hidden;
+        width: 0;
+       white-space: nowrap;
+       animation: autotyping 2s forwards ;
+       animation-delay: 1s;
+                    
+      }
+      h3{
+      font-size: 200%;color: white;
+      }
+      button{
+        background-color: white;
+        box-shadow: 0 0 10px black,
+                    0 0 40px black,
+                    0 0 80px black;
+        margin-left: 100%;
+        width: 150%;
+        font-size: 150%;
+        border-radius: 10px;
+        position: relative;
+        top: 90%;
+        transition: all ease 0.5s;
+      }
+      button:hover{
+        cursor: pointer;
+        color: white;
+        background-color: crimson;
+        box-shadow: 0 0 10px #fff,
+                    0 0 40px#fff,
+                    0 0 80px#fff;
+
+      }
+      a{
+  text-decoration: none;
+}
+
+
+
+
+
+      @keyframes autotyping {
+    from{width: 0;}
+    to{width: 100%;}
+    
+     }
+     @keyframes imgslide {
+    from{position: relative;
+      right: -100%;}
+    to{position: relative;
+      right: -10%;}
+    
+     }
+
+
+
+
+
+
+
+     @media (max-width: 768px) {
+
+  
+          
+
+
+
+
+          }
+
+    
+
+
+   
+ 
+    </style>
+</head>
+
+
+<body>
+  <div id="header">
+    <h1>PORTFO<span id="spn1">LIO</span></h1>
+    <nav>
+        <a href="Pindex.html">ABOUT ME</a>
+        <a href="Pskills.html">SKILLS</a>
+        <a href="Pproject.html">PROJECTS</a>
+        <a href="Pcontact.html">CONTACT</a>
+    </nav>
+</div>
+    <div id="main">
+
+     
+       
+          <div id="left">
+              <h3>
+                        HII, <br>
+                         I'm <br> <br>
+                         <span id="spn2"> SUHAIL AKHTAR,</span> <br> <span id="spn3"> FULL-STACK-DEVELOPER</span><br> <br>
+                       I design and develop experiences that make peoples lives
+                          simpler through Mobile apps and websites. <br>
+                  
+              </h3>
+          </div>
+
+
+
+
+          <div id="incline">
+          <a href="Pcontact.html"><button>HIRE ME</button></a>
+          <a href="Pproject.html"><button>SEE MY PROJECTS</button></a>
+          </div>
+
+
+          
+            <img id="img1" src="ZIMGX.png" alt="">
+          </div>
+        
+
+
+
+
+
+
+    </div>
+</body>
+</html>

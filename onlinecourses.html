@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon"type="x" href="zcartoonasct.png">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <title>Online Courses</title>
+
+  <style>
+    body {
+  font-family:sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+#bar{
+    display: flex;
+    height: 5%;
+    width: 100%;
+    z-index: 100; 
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    border-bottom: 1px solid black;
+ 
+    background-color:#22668D;
+    border-radius: 10px;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    
+
+
+    opacity: 1;
+    position: fixed;
+    top: -2%;
+    z-index: 1000;
+
+    
+}
+#logo{
+   
+    height:100%;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 2%;
+    
+    background-color: #FEFEDF;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#h21{
+    color: brown;
+    font-size: 250%;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+    position: absolute;
+    top: -30%;
+    left: 3%;
+}
+#barlist{
+  
+    border-radius: 10px;
+    width: 60%;
+    height: 90%;
+    display: flex;
+
+    margin-left: 12%;
+    justify-content: space-around;
+  
+}
+#barlist h3{
+    color: white;
+    text-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    transition: all ease 0.1s;
+}
+#barlist h3:hover{
+    color: brown;
+    font-size: 110%;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons{
+
+    display: flex;
+    width: 20%;
+    font-size: 180%;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 1.5%;
+
+    position: absolute;
+    top: 2%;
+    left: 75%;
+
+}
+#icons #i3:hover{
+    color: cornflowerblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+
+}
+#i1,#i2,#i3{
+    color:black;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i1:hover{
+    color: skyblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i2:hover{
+    color: rgb(211, 64, 38);
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+
+
+
+        header {
+          background-color: #226B80;
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            width: 100%;
+            margin-top: 3%;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 160px #fff;
+            position: fixed;
+            z-index: 100; 
+        }
+
+
+
+section {
+  padding: 20px;
+  padding-top: 5%;
+  overflow: hidden;
+  
+}
+#container{
+  max-width: 1200px;
+            margin: 20px auto;
+            margin-top: 10%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black,    
+                        0 0 80px black;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: all ease 0.4s ;
+
+}
+#container:hover{
+  scale: 1.2;
+}
+h2{
+  z-index: 50;
+  font-size: 200%;
+            text-shadow: 0 0 10px black,
+                         0 0 20px black,
+                         0 0 40px black,
+                         0 0 80px black;      
+        }
+li{
+  z-index: 50;
+}
+ul:hover{
+  color: rgb(27, 121, 158);
+}
+
+
+footer {
+  background-color: #226B80;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+main{
+  display: flex;
+  justify-content: space-around;
+}
+#backvideo{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+ scale: 1.2;
+}
+@media (max-width: 768px) {
+            /* Define styles for screens with a maximum width of 768px (adjust as needed) */
+         
+            
+        
+            
+              main {
+                flex-direction: column;
+                 height: 200%;
+                 width: 100%;
+            }
+            #bar{
+                display: none;
+            }
+       
+        }
+  </style>
+  </style>
+</head>
+<body>
+  <div id="bar">
+    <a href="index.html">  <img id="logo" src="zlogo.png" alt="">
+        <h2 id="h21">ASCT</h2></a>
+     <div id="barlist">
+        <a href="index.html"> <h3>HOME</h3></a>
+        <a href="index.html#facilities"><h3>FACILITIES</h3></a>
+        <a href="department.html"><h3>DEPARTMENTS</h3></a>
+        <a href="gallary.html"><h3>GALLARY</h3></a>
+        <a href="contactus.html"><h3>CONTACT US</h3></a>
+        <a href="index.html#services"><h3>SERVICES</h3></a>
+     </div>
+       <div id="icons">
+       <a href=""><i id="i1" class="ri-twitter-fill"></i></a>
+       <a href="https://www.instagram.com/asct_bhopal/"><i id="i2" class="ri-instagram-line"></i></a>
+       <a href="https://m.facebook.com/people/All-Saints-College-of-Technology-Bhopal/100066499428214/?locale=lv_LV"><i id="i3" class="ri-facebook-fill"></i></a>
+       <a href=""><i id="i3" class="ri-linkedin-fill"></i></a>
+       </div>
+</div>
+  <header>
+    <h1>ASCT Online Courses </h1>
+  </header>
+ 
+     <main>
+    
+       <div id="container">
+   
+    <section id="programming">
+     
+      <h2>Programming Courses</h2>
+      <ul>
+      
+        <li>Intro to Programming</li>
+        <br>
+        <li>Python for Everybody</li>
+        <br>
+        <li>Web Development Bootcamp</li>
+        <br>
+        <li>Machine Learning</li>   
+        <br>     
+        <li>Cybersecurity MicroMasters</li>
+        <br>
+        <li>Introduction to Data Science</li>   
+        <br>
+        <li>Artificial Intelligence Nanodegree</li>
+        <br>
+        <li>Android Developer Nanodegree</li>
+        <br>
+        <li> Blockchain Specialization</li> 
+        
+      </ul>
+    </section>
+  </div>
+  
+ <div id="container">
+  <section id="design">
+    <h2>Design Courses</h2>
+    <ul>
+      <li> Graphic Design <br> Specialization</li>
+      <br>
+      <li>UI/UX Design with <br> Adobe XD</li> 
+      <br>
+      <li> Introduction to <br> Interior Design</li>
+      <br>
+      <li>Game Design and <br> Development Specialization</li>
+      <br>
+      <li>Interaction Design <br> Specialization</li>
+      <br>
+      <li> Logo Design Masterclass</li> 
+      <br>       
+      <li>Typography That Works</li>
+     
+    </ul>
+  </section>
+ </div>
+  
+  <div id="container">
+    <section id="business">
+      <h2>Business Courses</h2>
+      <ul>
+        <li>Introduction to Business <br> Strategy </li>
+         <br>
+        <li>Digital Marketing Fundamentals </li>
+        <br>
+        <li>Financial Management for <br> Small Businesses</li>
+        <br>
+        <li>Leadership and Influence</li>
+        <br>
+        <li>Business Ethics and <br> Social Responsibility</li>
+        <br>
+        <li>E-commerce Business Models</li>     
+        <br>   
+        <li>Project Management <br> for Beginners</li>
+        
+      </ul>
+    </section>
+  </div>
+     </main>
+  
+
+
+
+
+
+
+  <footer>
+    <p>&copy; 2023 ASCT BHOPAL. All rights reserved.</p>
+  </footer>
+</body>
+</html>

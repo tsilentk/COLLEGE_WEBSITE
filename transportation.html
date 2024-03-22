@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon"type="x" href="zcartoonasct.png">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <title>ASCT TRANSPORTATION</title>
+
+  <style>
+   *{
+    scroll-behavior: smooth;
+   }
+    body {
+  font-family:sans-serif;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+#bar{
+    display: flex;
+    height: 5%;
+    width: 100%;
+    z-index: 100; 
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    border-bottom: 1px solid black;
+ 
+    background-color:#22668D;
+    border-radius: 10px;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    
+
+
+    opacity: 1;
+    position: fixed;
+    top: -2%;
+    z-index: 1000;
+
+    
+}
+#logo{
+   
+    height:100%;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 2%;
+    background-color: #FEFEDF;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#h21{
+    color: brown;
+    font-size: 250%;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+    position: absolute;
+    top: -30%;
+    left: 3%;
+}
+#barlist{
+  
+    border-radius: 10px;
+    width: 60%;
+    height: 90%;
+    display: flex;
+
+    margin-left: 12%;
+    justify-content: space-around;
+  
+}
+#barlist h3{
+  font-size: 100%;
+    color: white;
+    text-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    transition: all ease 0.1s;
+}
+#barlist h3:hover{
+    color: brown;
+    font-size: 102%;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons{
+
+    display: flex;
+    width: 20%;
+    font-size: 100%;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 1.5%;
+
+    position: absolute;
+    top: 2%;
+    left: 75%;
+
+}
+#icons #i3:hover{
+    color: cornflowerblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+
+}
+#i1,#i2,#i3{
+    color:black;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i1:hover{
+    color: skyblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i2:hover{
+    color: rgb(211, 64, 38);
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+
+
+
+
+        header {
+          background-color: #226B80;
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            width: 100%;
+            margin-top: 3%;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 160px #fff;
+            position: fixed;
+            top: 0%;
+            z-index: 100; 
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #226B80;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            top: 15%;
+           z-index: 100; 
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(216, 208, 208, 0.2);
+        }
+        nav a:hover{
+            color: black;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+
+
+
+#container{
+            padding-top: 1%;
+            padding-left: 1%;
+           
+            padding-bottom: 1%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+        
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black,    
+                        0 0 80px black;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            scale: 1.05;
+
+}
+section{
+  padding-top: 14%;
+}
+
+
+
+
+
+footer{
+  background-color: #226B80;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  
+}
+#footer{
+  font-size: 100%;
+  color: #ddd;
+  margin-top: 10%;
+  z-index: 100;
+}
+a{
+  text-decoration: none;
+}
+
+
+#text{
+  max-width: 1200px;
+  height: 500px;
+margin: 20px auto;
+margin-top: 10%;
+padding: 20px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px black,    
+            0 0 80px black;
+border: 1px solid #ddd;
+ border-radius: 5px;
+scale: .9;
+background-image: url(https://w0.peakpx.com/wallpaper/351/266/HD-wallpaper-amado-school-bus-school-amado-street-bus.jpg);
+background-position: center;
+background-size: cover;
+isolation: isolate;
+}
+
+
+h3{
+  font-size: 250%;
+    text-align: center;
+    text-shadow: 0 0 10px black,
+                         0 0 20px black,
+                         0 0 40px black,
+                         0 0 80px black;      
+}
+p{
+  font-size: 180%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 10px black,
+                         0 0 20px black,
+                         0 0 40px black,
+                         0 0 80px black;  
+}
+#bus{
+  scale: 0.5;
+  position: relative;
+  left: -8%;
+
+}
+#asctcartoon{
+ 
+    
+    height: 220px;
+    width:70%;
+   
+    position: relative;
+    left: 1%;
+ 
+}
+#asctcartoon img{
+  height: 150px;
+    width:100%;
+}
+h4{
+text-align: center;
+margin-top: -1%;
+color: brown;
+}
+h2{
+  font-size: 250%;
+  text-align: center;
+  text-shadow: 0 0 10px #fff,
+                         0 0 20px #fff,
+                         0 0 40px #fff,
+                         0 0 80px #fff,
+                         0 0 160px #fff;
+}
+
+      
+    
+     span{
+      color: red;
+      background-color: yellow;
+
+      border-radius: 10px;
+      box-shadow: none;
+     }  
+   #line{
+    margin-top: 7.5%;
+    
+    height: 5px;
+    width:7%;
+    background-color: skyblue;
+    position: relative;
+    left: -4%;
+   }
+   i{
+    margin-top: 6.3%;
+    font-size: 200%;
+    position: relative;
+    left: -4.2%;
+   
+   }
+   #down{
+    
+    width: 50%;
+    display: flex;
+  
+    position: absolute;
+    left: 34%;
+    top: 52%;
+   }
+   #up{
+    
+    width: 50%;
+    display: flex;
+  
+    position: absolute;
+    left: 29%;
+   }
+   h5{
+    font-size: 60%;
+    margin-left: 13%;
+    scale: 2;
+   }
+   h5:hover{
+    scale: 2.01;
+    color: rgb(88, 195, 238);
+   }
+
+
+
+
+
+   .contact-tab,.contact-tab2,.contact-tab3,.contact-tab4,.contact-tab5{
+            position: fixed;
+            top: 10%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: rgb(36, 199, 36);
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            z-index: 999;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-family: sans-serif;
+        }
+
+        .contact-tab:hover,.contact-tab2:hover,.contact-tab3:hover,.contact-tab4:hover,.contact-tab5:hover{
+            background-color:rgb(11, 138, 11);
+        }
+
+        
+        .contact-content,.contact-content2,.contact-content3,.contact-content4,.contact-content5{
+            position: fixed;
+            top: 50%;
+            left: -400px;
+            transform: translateY(-50%);
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            width: 250px;
+            box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+            transition: left 0.3s ease-in-out;
+            font-family: sans-serif;
+        }
+
+     
+
+        .close-btn,.close-btn2,.close-btn3,.close-btn4,.close-btn5 {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+        #dci, #dci2,#dci3,#dci4,#dci5{
+          text-shadow: 0 0 10px black,
+                         0 0 20px black,
+                         0 0 40px black,
+                         0 0 80px black;   
+          font-size: 100%;
+        }
+      #drn,#drn2,#drn3,#drn4,#drn5{
+        font-size: 100%;
+        color: #007bff;
+        text-shadow: none;
+
+      }
+      #drno,#drno2, #drno3, #drno4, #drno5{
+        font-size: 100%;
+        color: #007bff;
+        text-shadow: none;
+      }
+
+
+
+
+
+
+
+      @media only screen and (max-width: 768px) {
+    #bar {
+        display: none;
+    }
+    header{
+      position: fixed;
+      top: -2%;
+    }
+    nav{
+      position: fixed;
+      top: 5%;
+    }
+  
+
+    
+
+      }
+
+  
+
+
+
+      
+    
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <div id="bar">
+    <a href="index.html">  <img id="logo" src="zlogo.png" alt="">
+        <h2 id="h21">ASCT</h2></a>
+     <div id="barlist">
+        <a href="index.html"> <h3>HOME</h3></a>
+        <a href="index.html#facilities"><h3>FACILITIES</h3></a>
+        <a href="department.html"><h3>DEPARTMENTS</h3></a>
+        <a href="gallary.html"><h3>GALLARY</h3></a>
+        <a href="contactus.html"><h3>CONTACT US</h3></a>
+        <a href="index.html#services"><h3>SERVICES</h3></a>
+     </div>
+       <div id="icons">
+       <a href=""><i id="i1" class="ri-twitter-fill"></i></a>
+       <a href="https://www.instagram.com/asct_bhopal/"><i id="i2" class="ri-instagram-line"></i></a>
+       <a href="https://m.facebook.com/people/All-Saints-College-of-Technology-Bhopal/100066499428214/?locale=lv_LV"><i id="i3" class="ri-facebook-fill"></i></a>
+       <a href=""><i id="i3" class="ri-linkedin-fill"></i></a>
+       </div>
+</div>
+  <header>
+    <h1>ASCT TRANSPORTATION</h1>
+  </header>
+  <nav>
+    <a href="#bus1">BUS NO.01</a>
+    <a href="#bus11">BUS NO.11</a>
+    <a href="#bus12">BUS NO.12</a>
+    <a href="#bus16">BUS NO.16</a>
+    <a href="#van2">VAN NO.02</a>
+  </nav>
+
+  <div id="text">
+   <h2> College Bus Facility</h2>
+    <p>
+        Transport for daily commuting is generally one of the worries of parents. To enable students to free themselves from the worries of the transportation, we have made arrangements for College buses for students as well as staff. College is running bus services from different locations so that students hailing from any location within <b>Bhopal</b> will have a nearby pickup cumdrop back point to board the college bus to come to college and to go back home. This will make them free from the mental tension of driving or taking public transport system, to come to the college and go back, so that they fully concentrate on their studies. Parents also can have peace of mind while their wards are out in the college and need not worry about the traffic and driving problem.</p>
+  </div>
+ 
+   
+
+
+
+
+      <section id="bus1">
+        <div id="container">
+          <h3>BUS NO. <br><span>01</span></h3>
+          <img id="bus" src="zbus.png" alt="">
+
+          <div id="up">
+                  <h5>Nadra <br> Bus <br> Stand</h5> 
+                 <h5>Railway <br> Station <br> Bridge</h5>
+                 <h5>Ashoka <br> Garden</h5>
+                 <h5>Capital <br> Petrol <br> Pump</h5> 
+           </div>
+
+          <i class="ri-arrow-right-circle-line"></i> <div id="line"></div>
+          <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+         <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+         <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+         <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+         <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+         <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+         <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+       
+         <i class="ri-arrow-right-circle-line"></i>
+
+         <div id="down">
+                <h5>Bharat <br> Talkies</h5> 
+                <h5>Pushpa <br> Nagar </h5>
+                <h5>Prabhat <br> Square</h5>
+                 <h5>Jahang- <br> irabaad <br> Square</h5> 
+        </div>
+
+      
+          <div id="asctcartoon">
+            <img src="zcartoonasct.png" alt="">
+            <h4>All-Saints-College-of-Technology-Bhopal</h4>
+          </div>
+          
+
+          <div class="contact-tab" id="contactTab">
+              Driver Contact
+          </div>
+          <div class="contact-content" id="contactContent">
+              <span class="close-btn" onclick="closeContactTab()">&times;</span>
+              <h2 id="dci">Driver's Contact Information</h2>
+              <p id="drn">Name: Naseeruddin</p>
+              <p id="drno">Phone:+91 9479378366</p>
+          </div>
+
+
+
+     
+       
+           
+          </div>
+      </section>
+        
+
+
+      <section id="bus11">
+        <div id="container">
+          <h3>BUS NO. <br>  <span>11</span></h3>
+
+
+
+            <img id="bus" src="zbus.png" alt="">
+
+            
+          <div id="up">
+            <h5>Kamla <br> Park</h5> 
+          
+           <h5>Moti <br>Masjid</h5>
+          
+           <h5>G- P- O</h5>
+           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+           <h5>Noor <br>Masjid <br>Kohe-fiza</h5>
+           
+          
+         
+
+
+     </div>
+
+    <i class="ri-arrow-right-circle-line"></i> <div id="line"></div>
+    <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+ 
+   <i class="ri-arrow-right-circle-line"></i>
+
+   <div id="down">
+           <h5>Ret <br>Ghat</h5> 
+           <h5>peer- <br> gate <br> & <br> Emaami- <br> gate</h5> 
+           <h5>T - M - <br> Convent</h5>
+           <h5>Bahar<br>Manzil<br>Kohe-fiza</h5>
+          
+  </div>
+          
+            <div id="asctcartoon">
+              <img src="zcartoonasct.png" alt="">
+              <h4>All-Saints-College-of-Technology-Bhopal</h4>
+            </div>
+
+
+            <div class="contact-tab2" id="contactTab2">
+              Driver Contact
+             </div>
+             <div class="contact-content2" id="contactContent2">
+              <span class="close-btn2" onclick="closeContactTab2()">&times;</span>
+              <h2 id="dci2">Driver's Contact Information</h2>
+              <p id="drn2">Name: Shanu</p>
+              <p id="drno2">Phone:+91 7869803824</p>
+             </div>
+
+
+
+
+          </div>
+    
+         </div>
+      </section>
+        
+
+
+       <section id="bus12">
+        <div id="container">
+          <h3>BUS NO. <br>  <span>12</span></h3>
+            <img id="bus"  src="zbus.png" alt="">
+
+                        
+          <div id="up">
+            <h5>Prabhat <br> Square</h5> 
+           <h5>jahang- <br>irabaad <br>Square</h5>
+           <h5>V-I-P <br>Road</h5>
+         
+     </div>
+
+    <i class="ri-arrow-right-circle-line"></i> <div id="line"></div>
+    <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+ 
+ 
+   <i class="ri-arrow-right-circle-line"></i>
+
+   <div id="down">
+          <h5>Capital <br>Petrol <br>Pump</h5> 
+          <h5>Poly- <br>technique <br>Square</h5>
+          <h5>Khanugaon</h5>
+           
+  </div>
+          
+          
+  
+            <div id="asctcartoon">
+              <img src="zcartoonasct.png" alt="">
+              <h4>All-Saints-College-of-Technology-Bhopal</h4>
+            </div>
+
+            <div class="contact-tab3" id="contactTab3">
+              Driver Contact
+             </div>
+             <div class="contact-content3" id="contactContent3">
+              <span class="close-btn3" onclick="closeContactTab3()">&times;</span>
+              <h2 id="dci3">Driver's Contact Information</h2>
+              <p id="drn3">Name: Arun Agarwal</p>
+              <p id="drno3">Phone:+91 6261120392</p>
+             </div>
+  
+
+
+
+
+          </div>
+  
+        </div>
+       </section>
+      
+
+
+       <section id="bus16">
+         <div id="container">
+        <h3>BUS NO. <br>  <span>16</span></h3>
+         <img id="bus"  src="zbus.png" alt="">
+
+                     
+         <div id="up">
+          <h5>Nizam- <br> uddin <br>Colony</h5> 
+         <h5>Jinsi</h5>
+         <h5>Poly- <br>technique <br>Square</h5>
+         <h5>Iqbal <br> Maidan</h5> 
+         <h5>Lalghati</h5>
+   </div>
+
+  <i class="ri-arrow-right-circle-line"></i> <div id="line"></div>
+  <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+ <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+ <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+ <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+ <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+ <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+ <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+
+ <i class="ri-arrow-right-circle-line"></i>
+
+ <div id="down">
+        <h5>T- <br>Point</h5> 
+        <h5>jahang- <br>irabaad <br>Square</h5>
+        <h5>Budhwara</h5>
+         <h5>G-P-O</h5> 
+</div>
+        
+        
+
+
+         <div id="asctcartoon">
+           <img src="zcartoonasct.png" alt="">
+           <h4>All-Saints-College-of-Technology-Bhopal</h4>
+         </div>
+
+         <div class="contact-tab4" id="contactTab4">
+          Driver Contact
+        </div>
+        <div class="contact-content4" id="contactContent4">
+          <span class="close-btn4" onclick="closeContactTab4()">&times;</span>
+          <h2 id="dci4">Driver's Contact Information</h2>
+          <p id="drn4">Name: Asif Bhai</p>
+          <p id="drno4">Phone:+91 9111413160</p>
+        </div>
+
+
+
+
+
+
+          </div>
+    
+      </div>
+    </section>
+
+
+
+        
+        <section id="van2">
+          <div id="container">
+            <h3>VAN NO. <br>  <span>02</span></h3>
+              <img id="bus"  src="zbus.png" alt="">
+
+                          
+          <div id="up">
+            <h5>Qazi <br> Camp</h5> 
+           <h5>Sidhi <br>Colony</h5>
+           &nbsp;&nbsp;&nbsp;
+           <h5>Sahjaa-<br>nabaad <br>(Tank)</h5>
+           <h5>Lalghati</h5> 
+     </div>
+
+    <i class="ri-arrow-right-circle-line"></i> <div id="line"></div>
+    <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-down-circle-line"></i><div id="line"></div>
+   <i class="ri-arrow-up-circle-line"></i><div id="line"></div>
+  
+ 
+   <i class="ri-arrow-right-circle-line"></i>
+
+   <div id="down">
+          <h5>D-I-G <br>Bunglow</h5> 
+          <h5>Islami <br>Gate</h5>
+          <h5>Gol <br>Ghar</h5>
+     
+  </div>
+          
+
+             
+              <div id="asctcartoon">
+                <img src="zcartoonasct.png" alt="">
+                <h4>All-Saints-College-of-Technology-Bhopal</h4>
+              </div>
+
+              <div class="contact-tab5" id="contactTab5">
+                Driver Contact
+              </div>
+              <div class="contact-content5" id="contactContent5">
+                <span class="close-btn5" onclick="closeContactTab5()">&times;</span>
+                <h2 id="dci5">Driver's Contact Information</h2>
+                <p id="drn5">Name: Bashar Bhai</p>
+                <p id="drno5">Phone:+91 8602629919</p>
+              </div>  
+            
+
+
+
+          </div>
+       
+          </div>
+        </section>
+       
+
+  <footer>
+    <p id="footer">&copy; 2023 ASCT BHOPAL. All rights reserved.</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+  <script>
+
+
+   
+        function closeContactTab() {
+          document.getElementById('contactContent').style.left = '-400px';
+        }
+        document.getElementById('contactTab').addEventListener('click', function () {
+            document.getElementById('contactContent').style.left = '0';
+        });
+
+
+
+        function closeContactTab2() {
+          document.getElementById('contactContent2').style.left = '-400px';
+        }
+        document.getElementById('contactTab2').addEventListener('click', function () {
+            document.getElementById('contactContent2').style.left = '0';
+        });
+
+
+        function closeContactTab3() {
+          document.getElementById('contactContent3').style.left = '-400px';
+        }
+        document.getElementById('contactTab3').addEventListener('click', function () {
+            document.getElementById('contactContent3').style.left = '0';
+        });
+
+
+        function closeContactTab4() {
+          document.getElementById('contactContent4').style.left = '-400px';
+        }
+        document.getElementById('contactTab4').addEventListener('click', function () {
+            document.getElementById('contactContent4').style.left = '0';
+        });
+
+
+
+        function closeContactTab5() {
+          document.getElementById('contactContent5').style.left = '-400px';
+        }
+        document.getElementById('contactTab5').addEventListener('click', function () {
+            document.getElementById('contactContent5').style.left = '0';
+        });
+
+
+
+
+
+    var tl = gsap.timeline();
+
+tl.to("#bus",{
+x:"-100vh",
+
+duration:0
+})
+
+tl.to("#bus",{
+
+x:"ovh",
+y:"0vh",
+
+duration:0.8
+})
+tl.to("#bus",{
+x:"+100vh",     
+
+duration:1.5
+})
+tl.to("#bus",{
+x:"+110vh",
+ dely:0.04,
+duration:1.1,
+scale:.3
+})
+tl.to("#bus",{
+x:"+120vh",
+
+duration:1.1,
+scale:.2
+})
+tl.to("#bus",{
+x:"+127vh",
+
+duration:1.5,
+scale:.1
+})
+
+
+tl.to("#bus",{
+x:"-100vh",
+ scale:0.5,
+duration:0
+})
+tl.to("#bus",{
+
+x:"ovh",
+y:"0vh",
+
+duration:0.8
+})
+  </script> 
+</body>
+</html>

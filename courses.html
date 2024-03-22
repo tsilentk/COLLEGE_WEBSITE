@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon"type="x" href="zcartoonasct.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>ASCT Courses</title>
+ 
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+    
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+    text-decoration: none;
+}
+        #bar{
+    display: flex;
+    height: 5%;
+    width: 100%;
+    z-index: 100; 
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    border-bottom: 1px solid black;
+ 
+    background-color:#22668D;
+    border-radius: 10px;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    
+
+
+    opacity: 1;
+    position: fixed;
+    top: -2%;
+    z-index: 1000;
+
+    
+}
+#logo{
+   
+    height:100%;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 2%;
+    background-color: #FEFEDF;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#h21{
+    color: brown;
+    font-size: 250%;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+    position: absolute;
+    top: -30%;
+    left: 3%;
+}
+#barlist{
+  
+    border-radius: 10px;
+    width: 60%;
+    height: 90%;
+    display: flex;
+
+    margin-left: 12%;
+    justify-content: space-around;
+  
+}
+#barlist h3{
+    color: white;
+    text-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    transition: all ease 0.1s;
+}
+#barlist h3:hover{
+    color: brown;
+    font-size: 110%;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons{
+
+    display: flex;
+    width: 20%;
+    font-size: 180%;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 1.5%;
+
+    position: absolute;
+    top: 2%;
+    left: 75%;
+
+}
+#icons #i3:hover{
+    color: cornflowerblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+
+}
+#i1,#i2,#i3{
+    color:black;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i1:hover{
+    color: skyblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i2:hover{
+    color: rgb(211, 64, 38);
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+
+
+
+
+
+        header {
+            background-color: #226B80;
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            width: 100%;
+            margin-top: 3%;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 160px #fff;
+            position: fixed;
+            z-index: 100; 
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #226B80;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            top: 17%;
+           z-index: 100; 
+        }
+        section {
+            padding: 20px;
+            margin-left: 7.5%;
+            padding-top: 10%;
+            box-shadow: 0 0 10px rgba(216, 208, 208, 0.2);
+        }
+    
+        .container {
+            width: 85%;
+          
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black, 0 0 80px black;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    
+        .placement-card {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(216, 208, 208, 0.2);
+        }
+    
+        .placement-info {
+            font-weight: 900;
+            font-size: 120%;
+          padding-left: 41%;
+        }
+    
+        ul {
+            font-size: 120%;
+        }
+    
+        button {
+            font-size: 60%;
+            width: 20%;
+            color: #ddd;
+            background-color: brown;
+            border: 0.5px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(216, 208, 208, 0.2);
+            animation: bot 0.5s linear infinite;
+        }
+    
+        button:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.1);
+        }
+    
+        span {
+            color: rgb(27, 108, 139);
+        }
+    
+      
+    
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+    
+        nav a:hover {
+            color: black;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+    
+        #dtext {
+            margin-left: 5%;
+        }
+    
+        #bottom {
+            text-align: center;
+            background-color: #226B80;
+            color: #fff;
+        }
+    
+        h2 {
+            text-shadow: 0 0 10px black, 0 0 20px black, 0 0 40px black, 0 0 80px black;
+        }
+    
+        footer {
+            margin-top: -2%;
+            background-color: #226B80;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        @keyframes bot {
+            from {
+                transform: scale(1);
+            }
+    
+            to {
+                transform: scale(1.2);
+            }
+        }
+    
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .placement-info {
+                font-size: 100%;
+                align-items: center;
+            }
+    
+            ul {
+                font-size: 100%;
+            }
+    
+            button {
+                font-size: 50%;
+                width: 15%;
+            }
+            header {
+                    padding: 10px; /* Adjust padding for smaller screens */
+                }
+                   
+                nav {
+                flex-direction: column;
+                align-items: center;
+                top: 0;
+                position: relative;
+            }
+            
+            nav a {
+                margin: 10px 0;
+                font-size: 100%;
+            }
+            #bar{
+                display: none;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .placement-info {
+                font-size: 80%;
+                align-items: center;
+              
+            }
+    
+            ul {
+                font-size: 80%;
+            }
+    
+            button {
+                font-size: 40%;
+                width: 30%;
+            }
+            #bar{
+                display: none;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="bar">
+        <a href="index.html">  <img id="logo" src="zlogo.png" alt="">
+            <h2 id="h21">ASCT</h2></a>
+         <div id="barlist">
+            <a href="index.html"> <h3>HOME</h3></a>
+            <a href="index.html#facilities"><h3>FACILITIES</h3></a>
+            <a href="department.html"><h3>DEPARTMENTS</h3></a>
+            <a href="gallary.html"><h3>GALLARY</h3></a>
+            <a href="contactus.html"><h3>CONTACT US</h3></a>
+            <a href="index.html#services"><h3>SERVICES</h3></a>
+         </div>
+           <div id="icons">
+           <a href=""><i id="i1" class="ri-twitter-fill"></i></a>
+           <a href="https://www.instagram.com/asct_bhopal/"><i id="i2" class="ri-instagram-line"></i></a>
+           <a href="https://m.facebook.com/people/All-Saints-College-of-Technology-Bhopal/100066499428214/?locale=lv_LV"><i id="i3" class="ri-facebook-fill"></i></a>
+           <a href=""><i id="i3" class="ri-linkedin-fill"></i></a>
+           </div>
+    </div>
+    <header>
+        <h1>ASCT Courses</h1>
+    </header>
+    <nav>
+        <a href="#(POLYTECHNIC COURSES)">POLYTECHNIC COURSES</a>
+        <a href="#(UG COURSES)">UG COURSES</a>
+        <a href="#(PG COURSES)">PG COURSES</a>
+    </nav>
+
+
+    <section id="(POLYTECHNIC COURSES)">
+        <h2> (POLYTECHNIC COURSES )</h2>
+      
+        <div class="container">
+            <div class="placement-card">
+              
+                
+                <div class="placement-info">
+                   <h3 id="dtext">
+                    DIPLOMA
+                   </h3>
+                    
+                </div>
+            </div>
+            <ul>
+                <li>Diploma in Electrical Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>60 seats &nbsp;</span> <a target="_blank" href="registationform.html"><button>APPLY NOW</button></a></li>
+                <br>
+                <li>Diploma in Mechanical Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>60 seats &nbsp; </span><a target="_blank" href="registationform.html"><button>APPLY NOW</button></a></li>
+                <br>
+                <li>Diploma in Civil Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>60 seats &nbsp;</span><a target="_blank" href="registationform.html"><button>APPLY NOW</button></a></li>
+                <br>
+            </ul>
+           
+                <br><br>
+
+                 
+                <ol>
+                    <li> <h4>Minimum Qualification:- <br> <br>
+                        • Higher/Senior Secondary examination with Physics, Chemistry and Mathematics as main subjects.
+                       
+                     </h4>
+                         </li>
+                    <li><h4>Admission Procedure:- <br><br>
+                        • Admission is given on the basis of merit of AIEEE / 10th /12th merit. 
+                       </li>     
+                </ol>
+       
+       
+    </section>
+
+   
+
+  
+    <section id="(UG COURSES)">
+        <h2> (UG COURSES)</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                
+                <div class="placement-info">
+                   <h3>Bachelors Of Technology</h3>
+                    
+                </div>
+            </div>
+            <ul>
+                <li>B.Tech in Computer Science Engineering&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>120 seats &nbsp;</span><a target="_blank" href="registationform.html"><button>APPLY NOW</button></a></li>
+                <br>
+                <li>B.Tech in Electrical & Electronics Engineering&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span>60 seats &nbsp; </span><a target="_blank" href="registationform.html"><button>APPLY NOW</button></a></li>
+                <br>
+                <li>B.Tech in  Electronics & Communication Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span>120 seats &nbsp;</span><a target="_blank" href="registationform.html"><button>APPLY NOW</button></a></li>
+                <br>
+                <li>B.Tech in Mechanical Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> 120 seats &nbsp; </span><a target="_blank" href="registationform.html"><button>APPLY NOW</button></a></li>
+                <br>
+                <li>B.Tech Civil Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>120 seats &nbsp;</span><a target="_blank" href="registationform.html"><button>APPLY NOW</button></a></li>
+                <br>
+            </ul>
+           
+                <br><br>
+                
+                 
+                <ol>
+                    <li> <h4>Minimum Qualification:- <br> <br>
+                        • Higher/Senior Secondary examination with Physics, Chemistry and Mathematics as main subjects.
+                     </h4>
+                         </li>
+                    <li><h4>Admission Procedure:- <br><br>
+                        • Admission is given on the basis of merit of AIEEE / 10+2 merit.</h4></li>     
+                </ol>
+       
+       
+    </section>
+
+
+
+    <section id="(PG COURSES)">
+        <h2> (PG COURSES)</h2>
+      
+        <div class="container">
+            <div class="placement-card">
+              
+                
+                <div class="placement-info">
+                   <h3>Masters Of Technology</h3>
+                    
+                </div>
+            </div>
+            <ul>
+                <li>M.Tech in Computer Science Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>18 seats &nbsp;</span><a target="_blank" href="registationform.html"><button>APPLY NOW</button></a></li>
+                <br>
+                <li>M.Tech in Digital Communication &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>18 seats &nbsp; </span><a target="_blank" href="registationform.html"><button>APPLY NOW</button></a></li>
+                <br>
+                <li>M.Tech Thermal Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>18 seats &nbsp;</span><a target="_blank" href="registationform.html"><button>APPLY NOW</button></a></li>
+                <br>
+            </ul>
+           
+                <br><br>
+                
+                 
+                <ol>
+                    <li> <h4>Minimum Qualification:- <br> <br>
+                        •The candidates should have BE/B.Tech/MSc or equivalent degree in relevant course of engineering with not less than 60% marks or 6.5 CGPA in qualifying examination. 
+                       
+                     </h4>
+                         </li>
+                    <li><h4>Admission Procedure:- <br><br>
+                        •The candidates appearing for B.E/ B.Tech, Msc examinations may also apply for the M.Tech course. However they have to produce their marksheet showing 60% marks or 6.5 CGPA in aggregate.</h4></li>     
+                </ol>
+       
+       
+    </section>
+
+
+
+    
+
+
+
+
+    <div id="bottom">
+        <h4>For any query, feel free to contact us:- <br>  
+
+            All Saints' College of Technology <br>
+            Facing International Airport, Gandhi Nagar,Bhopal- 462036 <br>
+            Tel: (0755) 2528644, 2528853, 9303099961, 62, 63, 4093810 <br>
+            email: contact@asctbhopal.com</h4>
+    </div>
+    <footer>
+        <p>&copy; 2023 ASCT BHOPAL. All rights reserved.</p>
+      </footer>
+    
+
+
+</body>
+</html>

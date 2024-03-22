@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon"type="x" href="zcartoonasct.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>College Student Placements</title>
+    <style>
+      body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+                
+#bar{
+    display: flex;
+    height: 5%;
+    width: 100%;
+    z-index: 100; 
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    border-bottom: 1px solid black;
+ 
+    background-color:#22668D;
+    border-radius: 10px;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    
+
+
+    opacity: 1;
+    position: fixed;
+    top: -2%;
+    z-index: 1000;
+
+    
+}
+#logo{
+   
+    height:100%;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 2%;
+    background-color: #FEFEDF;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#h21{
+    color: brown;
+    font-size: 250%;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+    position: absolute;
+    top: -30%;
+    left: 3%;
+}
+#barlist{
+  
+    border-radius: 10px;
+    width: 60%;
+    height: 90%;
+    display: flex;
+
+    margin-left: 12%;
+    justify-content: space-around;
+  
+}
+#barlist h3{
+    color: white;
+    text-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    transition: all ease 0.1s;
+}
+#barlist h3:hover{
+    color: brown;
+    font-size: 110%;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons{
+
+    display: flex;
+    width: 20%;
+    font-size: 180%;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 1.5%;
+
+    position: absolute;
+    top: 2%;
+    left: 75%;
+
+}
+#icons #i3:hover{
+    color: cornflowerblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+
+}
+#i1,#i2,#i3{
+    color:black;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i1:hover{
+    color: skyblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i2:hover{
+    color: rgb(211, 64, 38);
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+
+
+        header {
+            background-color: #226B80;
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            width: 100%;
+            margin-top: 1%;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 160px #fff;
+            position: fixed;
+        }
+
+h1 {
+    font-size: 2.5rem; /* Use relative font size (rem) */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 90%; /* Adjust the maximum width as needed */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+    padding-top: 10%;
+}
+
+.placement-card {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 1rem; /* Use relative units (rem) */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.placement-card img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 40%;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.placement-info {
+    flex: 1;
+    font-size: 1.8rem; /* Use relative font size (rem) */
+    font-family: sans-serif;
+}
+
+footer {
+    background-color: #226B80;
+    color: #fff;
+    padding: 1rem; /* Use relative units (rem) */
+    text-align: center;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+    h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+    .placement-card {
+        flex-direction: column; /* Stack placement cards in smaller screens */
+    }
+    .placement-card img {
+        margin-right: 0; /* Remove right margin for smaller screens */
+    }
+    .placement-info {
+        font-size: 1.6rem; /* Adjust font size for smaller screens */
+    }
+    #bar{
+                display: none;
+            }
+}
+
+     
+    </style>
+</head>
+<body>
+    <div id="bar">
+        <a href="index.html">  <img id="logo" src="zlogo.png" alt="">
+            <h2 id="h21">ASCT</h2></a>
+         <div id="barlist">
+            <a href="index.html"> <h3>HOME</h3></a>
+            <a href="index.html#facilities"><h3>FACILITIES</h3></a>
+            <a href="department.html"><h3>DEPARTMENTS</h3></a>
+            <a href="gallary.html"><h3>GALLARY</h3></a>
+            <a href="contactus.html"><h3>CONTACT US</h3></a>
+            <a href="index.html#services"><h3>SERVICES</h3></a>
+         </div>
+           <div id="icons">
+           <a href=""><i id="i1" class="ri-twitter-fill"></i></a>
+           <a href="https://www.instagram.com/asct_bhopal/"><i id="i2" class="ri-instagram-line"></i></a>
+           <a href="https://m.facebook.com/people/All-Saints-College-of-Technology-Bhopal/100066499428214/?locale=lv_LV"><i id="i3" class="ri-facebook-fill"></i></a>
+           <a href=""><i id="i3" class="ri-linkedin-fill"></i></a>
+           </div>
+    </div>
+    <header>
+        <h1>ASCT Students Placements</h1>
+    </header>
+    <div class="container">
+        <div class="placement-card">
+          
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXNZRI1nrqKi3fo3ubslOzKN3MvmWMFNMqNR8JCcaW1lTBZdiZ995pjl3LD2yOr4OLuy0&usqp=CAU" alt="Student 1">
+            <div class="placement-info">
+               <p>The Training and Placement Cell is an integral part of ASCT. Training activities are organized throughout the year as an effort to prepare prospective candidates for campus selection programmes. T & P Cell advises and assists in career-oriented decisions. The Placement Office is responsible for forwarding students' data to various companies and arranges placement programmes. The T & P Cell also selects eligible candidates for open campus selections by companies and at other colleges.
+
+                Regular visits by industrial houses of national repute are organised for campus recruitment programmes. The placement cell coordinates effectively with the corporate sector and provides well-developed infrastructure to facilitate campus selection programmes.
+                
+                In order to meet manpower requirements of Industry, we at ASCT place great value on collaborating with industry to ensure that our students acquire the requisite knowledge, skill and aptitude through practical training in Industry. Students, on completion of their VI semester of B.E. have to undergo Summer Training in selected top Industries during the summer break. This training is a part of the curriculum and is aimed at making the students acquainted with the processes, practices as well as the rigour and complexities of the industrial world.
+                
+                In order to prepare students and to develop confidence through self-assesment of progress achieved, mock test, group discussions and mock interviews are conducted regularly by experts.
+                
+                We conduct soft skill classes for overall personality development to improve Communication Skills, Presentation Acumen, Aptitude, Interview techniques and Group discussion competencies. We also have provision for yoga training to manage stress and co-ordination of body and mind.
+                
+                Individual need-based training and encouragement is given to the students, who appear for campus placements. While applauding selected candidates, we provide intensive support and remedial measures for those who are not selected for jobs in their first attempt.
+                
+                Role of Training and Placement Cell @ ASCT
+                
+                The Training & Placement Cell's activities are:
+                • Development of Communication Skills
+                • Employment Search
+                • Interview Techniques
+                • Placement Opportunities
+                • CV Preparation
+                • General Advice and Guidance</p>
+                
+            </div>
+        </div>
+        
+        
+    
+    </div>
+    <footer>
+        <p>&copy; 2023 ASCT BHOPAL. All rights reserved.</p>
+      </footer>
+</body>
+</html>

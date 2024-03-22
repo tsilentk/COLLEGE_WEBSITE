@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon"type="x" href="zcartoonasct.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>ASCT chatbot</title>
+
+    <style>
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            
+        }
+        a{
+    text-decoration: none;
+}
+        #bar{
+    display: flex;
+    height: 10%;
+    width: 100%;
+
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    border-bottom: 1px solid black;
+ 
+    background-color:#22668D;
+   
+    border-radius: 10px;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+
+
+
+    opacity: 1;
+    position: fixed;
+    top: 0%;
+    z-index: 10;
+
+    
+}
+#logo{
+   
+    height:100%;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 2%;
+    background-color: #FEFEDF;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#h21{
+    color: brown;
+    font-size: 250%;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+    position: absolute;
+    top: 20%;
+    left: 4%;
+}
+#barlist{
+    
+    border-radius: 10px;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    margin-top: .5%;
+    margin-left: 12%;
+    justify-content: space-around;
+       }
+#barlist h3{
+    color: white;
+    text-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+ 
+    transition: all ease 0.1s;
+}
+#barlist h3:hover{
+ 
+    color: brown;
+    font-size: 110%;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff;
+}
+#icons{
+
+    display: flex;
+    width: 20%;
+    font-size: 180%;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 1.5%;
+
+    position: absolute;
+    top: 2%;
+    left: 75%;
+
+}
+#i1,#i2,#i3{
+    color:black;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+ 
+}
+#icons #i3:hover{
+    color: cornflowerblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+
+
+}
+#icons #i1:hover{
+    color: skyblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i2:hover{
+    color: rgb(211, 64, 38);
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+
+        #main{
+    background-image: url(https://media.istockphoto.com/id/1488335095/vector/3d-vector-robot-chatbot-ai-in-science-and-business-technology-and-engineering-concept.jpg?s=612x612&w=0&k=20&c=MSxiR6V1gROmrUBe1GpylDXs0D5CHT-mn0Up8D50mr8=);
+    background-position: center;
+    background-size: cover;
+    margin-top: 5%;
+    padding-left: 2%;
+    padding-top: 1%;
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+
+
+
+#chat-container {
+    color:black;
+    width: 50%;
+    height: 90%;
+    border: 1px solid black;
+    padding: 10px;
+    background-color:rgb(22, 132, 175);
+    border-radius: 5px;
+    
+    opacity: 1;
+    box-shadow:  0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff;
+}
+
+
+
+
+
+
+#chat-messages {
+    opacity: 1;
+    font-size: 150%;
+    height: 80%;
+    overflow-y: scroll;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color:rgb(49, 170, 218);
+    
+    
+}
+
+#user-input {
+    
+    width: 80%;
+
+    padding: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#lower{
+    display: flex;
+    font-size: 200%;
+}
+button{
+    font-size: 140%;
+}
+
+
+#text{
+    color: aliceblue;
+    height: 90%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    
+}
+#user-input{
+    font-size: 120%;
+}
+h1{
+    color: rgb(8, 91, 124);
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff;
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+    animation: autotyping 5s forwards  ;
+    animation-delay: 1s;
+}
+
+
+
+
+@keyframes autotyping {
+    from{width: 0;}
+    to{width: 100%;}
+    
+}
+
+    
+        @media (max-width: 768px) {
+            /* Define styles for screens with a maximum width of 768px (adjust as needed) */
+            #main {
+                padding-left: 1%;
+                padding-top: 2%;
+            }
+    
+            #chat-container {
+                width: 100%;
+            }
+    
+            #chat-messages {
+                font-size: 100%;
+            }
+    
+            #user-input {
+                width: 100%;
+                font-size: 100%;
+            }
+    
+            #lower button {
+                font-size: 100%;
+            }
+    
+            #text {
+                font-size: 100%;
+                text-align: center;
+                width: 100%;
+               
+                margin-top: 1%;
+            }
+            #main{
+                flex-direction: column;
+                 height: 200%;
+                 width: 100%;
+            }
+            #bar{
+                display: none;
+            }
+        }
+    </style>
+    
+
+</head>
+<body>
+    <div id="bar">
+        <a href="index.html">  <img id="logo" src="zlogo.png" alt="">
+            <h2 id="h21">ASCT</h2></a>
+         <div id="barlist">
+            <a href="index.html"> <h3>HOME</h3></a>
+            <a href="index.html#facilities"><h3>FACILITIES</h3></a>
+            <a href="department.html"><h3>DEPARTMENTS</h3></a>
+            <a href="gallary.html"><h3>GALLARY</h3></a>
+            <a href="contactus.html"><h3>CONTACT US</h3></a>
+            <a href="index.html#services"><h3>SERVICES</h3></a>
+         </div>
+           <div id="icons">
+           <a href=""><i id="i1" class="ri-twitter-fill"></i></a>
+           <a href="https://www.instagram.com/asct_bhopal/"><i id="i2" class="ri-instagram-line"></i></a>
+           <a href="https://m.facebook.com/people/All-Saints-College-of-Technology-Bhopal/100066499428214/?locale=lv_LV"><i id="i3" class="ri-facebook-fill"></i></a>
+           <a href=""><i id="i3" class="ri-linkedin-fill"></i></a>
+           </div>
+    </div>
+<div id="main">  
+      <div id="chat-container">
+    <h2><span>ASCT</span> chatbot</h2>
+    <div id="chat-messages">
+        <p>TSK: Hi! How can I help you with your college enquiries?</p>
+    </div>
+    <div id="lower">
+        <input type="text" id="user-input" placeholder="Type your queries.......">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+ 
+  </div>
+
+  <div id="text">
+    <br>
+    <h1>HII, <br>
+    I AM TSK <br>
+     AN ASCT CHATBOT ! <br> <br> 
+    ASK ME <br> YOUR COLLEGE <br>
+     RELATED QUERIES ?</h1>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script>
+                const chatMessages = document.getElementById("chat-messages");
+         const userInput = document.getElementById("user-input");
+
+        function sendMessage() {
+            const userMessage = userInput.value;
+            appendMessage("You: " + userMessage);
+
+            let response = "TSK: I'm sorry, I don't understand that. Please ask another question.";
+
+            if (userMessage.toLowerCase().includes("courses")) {
+                response = "TSK: Our college offers a wide range of courses. such as DIPLOMA,B.Tech.,M.Tech. & MBA and many more ";
+            } else if (userMessage.toLowerCase().includes("admission")) {
+                response = "TSK: For admission inquiries, please visit our admission page on the website or contact our admission department.";
+            } else if (userMessage.toLowerCase().includes("contact")) {
+                response = "TSK: You can contact us at contact@asctbhopal.com, asce2007@gmail.com or call us at  Tel: (0755) 2528644, 2528853, 9303099961";
+            }else if (userMessage.toLowerCase().includes("branches")) {
+                response = "TSK: there are many branches available such as-CIVIL ENGG. , MECHANICAL ENGG. , ELECTRICAL ENGG. , ELECRONICS COMMUNICATION ENGG. , & COMPUTER SCIENCE ENGG. etc";
+            }else if (userMessage.toLowerCase().includes("location")) {
+                response = " TSK: FACING INTERNATIONAL AIRPORT,GANDHINAGAR{BHOPAL} 462036";
+            }else if (userMessage.toLowerCase().includes("fee of b.tech")) {
+                response = " TSK: it is about Twenty Five Thousand Rupees per annum for accurate or more info. contact our admission department";
+            }
+            else if (userMessage.toLowerCase().includes("fee of m.tech")) {
+                response = " TSK: it is about Thirty Thousand Rupees per annum for accurate or more info. contact our admission department";
+            }else if (userMessage.toLowerCase().includes("fee of diploma")) {
+                response = " TSK: it is about Fifeteen thousand per annum for accurate or more info. contact our admission department";
+            }
+
+
+
+
+            appendMessage(response);
+            userInput.value = "";
+        }
+
+        function appendMessage(message) {
+            const messageElement = document.createElement("p");
+            messageElement.textContent = message;
+            chatMessages.appendChild(messageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+
+
+
+
+        var tl = gsap.timeline();
+
+tl.to("#chat-container",{
+    x:"-100vh",
+    scale:0.6,
+    duration:0
+})
+tl.to("#chat-container",{
+    x:"-20vh",
+    duration:1,
+    delay:0,
+})
+tl.to("#chat-container",{
+    
+    x:"0vh",
+    y:"0vh",
+    scale:1,
+    duration:0.8
+})
+        
+    </script>
+
+</body>
+</html>
+

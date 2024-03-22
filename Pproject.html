@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS</title>
+    <style>
+      *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family:sans-serif;
+
+      }
+      html,body{
+        height: 100vh;
+      }
+      #header{
+        height: 10%;
+        background-color:white;
+        justify-content: space-between;
+         display: flex;
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+      nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1%;
+      }
+      nav a{
+        color: black;
+        font-weight: 800;
+        text-shadow: 0 0 10px black,
+                    0 0 30px black,
+                    0 0 50px black;
+      }
+      nav a:hover{
+        cursor: pointer;
+        color: crimson;
+        font-size: 102%;
+        text-shadow: 0 0 10px crimson,
+                     0 0 30px crimson,
+                     0 0 50px crimson;
+      }
+      h1{
+        margin-top: -1%;
+        font-weight: 800;
+        text-shadow: 0 0 10px black,
+                    0 0 30px black,
+                    0 0 50px black;
+      }
+      #main{
+  
+      background-color:white;
+      height: 90%;
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      }
+      #left{
+        height: 100%;
+        width: 50%;
+       padding-left: 2%;
+       padding-top: 3%;
+        background-color: white;
+      }
+      #img1{
+        background-color: transparent;
+        scale: 1.5;
+        position: relative;
+        top: 14%;
+        right: -10%;
+        z-index: 100;
+      
+
+      }
+      #incline{
+         display: flex;
+        
+     
+        clip-path: polygon(0 83%, 73% 83%, 100% 100%, 0% 100%);
+        background-color:crimson;
+        z-index: 10;
+        height: 100%;
+        width: 75%;
+        position: absolute;
+        top: 0%;
+      }
+      #spn1{
+        
+        color:crimson;
+        text-shadow: 0 0 10px crimson,
+                     0 0 30px crimson,
+                     0 0 50px crimson;
+      }
+    
+      h3{
+      font-size: 200%;
+      }
+      button{
+        background-color: white;
+        box-shadow: 0 0 10px black,
+                    0 0 40px black,
+                    0 0 80px black;
+        margin-left: 100%;
+        width: 150%;
+        font-size: 150%;
+        border-radius: 10px;
+        position: relative;
+        top: 90%;
+        transition: all ease 0.5s;
+      }
+      button:hover{
+        cursor: pointer;
+        color: white;
+        background-color: crimson;
+        box-shadow: 0 0 10px #fff,
+                    0 0 40px#fff,
+                    0 0 80px#fff;
+
+      }
+      h4{
+        z-index: 1000;
+        font-size: 200%;
+      }
+     
+      h2{
+        color: white;
+        position: relative;
+        top: 87%;
+      }
+      .project {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 25%;
+    border: 1px solid #ddd;
+    text-align: center;
+    opacity: 1;
+    box-shadow: 0 0 10px black,
+                    0 0 40px black,
+                    0 0 80px black;
+     animation: slider  2s forwards; 
+    
+                    
+}
+.project:hover{
+    box-shadow: 0 0 10px crimson,
+                     0 0 30px crimson,
+                     0 0 50px crimson;
+}
+h5,p{
+  color:crimson;
+}
+h6{
+  color: black;
+}
+a{
+  text-decoration: none;
+}
+
+
+
+     @keyframes slider {
+    from{margin-left: -60%;
+            opacity: 0;}
+    to{margin-left: 25%;
+        opacity: 1;}
+    
+     }
+
+
+
+   
+ 
+    </style>
+</head>
+
+
+<body>
+  <div id="header">
+    <h1>PORTFO<span id="spn1">LIO</span></h1>
+    <nav>
+        <a href="Pindex.html">ABOUT ME</a>
+        <a href="Pskills.html">SKILLS</a>
+        <a href="Pproject.html">PROJECTS</a>
+        <a href="Pcontact.html">CONTACT</a>
+    </nav>
+</div>
+    <div id="main">
+
+     
+       
+          <div id="left">
+              <h4>My Projects</h4>
+              <br>
+              <a href=" https://tsilentk.github.io/.telerik/"> 
+                <section class="project">
+               <h5>Project 1</h5> <br>
+               <p>EMPLOYEE MANAGEMENT SYSTEM</p> <br>
+               <h6>MINOR PROJECT</h6>
+               </section>   
+               </a>
+      
+              <br>
+
+            <a href="https://tsilentk.github.io/xasct/"> 
+                 <section class="project">
+              <h5>Project 2</h5> <br>
+              <p>A COLLEGE WEBSITE</p> <br>
+              <h6>MAJOR PROJECT</h6>
+             </section>  
+             </a>
+         
+           
+       
+             
+         
+          
+          </div>
+
+
+
+
+          <div id="incline">
+          <a href="Pcontact.html"><button>HIRE ME</button></a>
+          <a href="Pproject.html"><button>SEE MY PROJECTS</button></a>
+          </div>
+
+
+          
+            <img id="img1" src="ZIMGX.png" alt="">
+          </div>
+        
+
+
+
+
+
+
+    </div>
+</body>
+</html>

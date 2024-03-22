@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon"type="x" href="zcartoonasct.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>ASCT PROGRAMS</title>
+    <style>
+         *{
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family:sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+    text-decoration: none;
+}
+#bar{
+    display: flex;
+    height: 5%;
+    width: 100%;
+    z-index: 100; 
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    border-bottom: 1px solid black;
+ 
+    background-color:#22668D;
+    border-radius: 10px;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    
+
+
+    opacity: 1;
+    position: fixed;
+    top: -2%;
+    z-index: 1000;
+
+    
+}
+#logo{
+   
+    height:100%;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 2%;
+    background-color: #FEFEDF;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#h21{
+    color: brown;
+    font-size: 250%;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+    position: absolute;
+    top: -30%;
+    left: 3%;
+}
+#barlist{
+  
+    border-radius: 10px;
+    width: 60%;
+    height: 90%;
+    display: flex;
+
+    margin-left: 12%;
+    justify-content: space-around;
+  
+}
+#barlist h3{
+    color: white;
+    text-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    transition: all ease 0.1s;
+}
+#barlist h3:hover{
+    color: brown;
+    font-size: 110%;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons{
+
+    display: flex;
+    width: 20%;
+    font-size: 180%;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 1.5%;
+
+    position: absolute;
+    top: 2%;
+    left: 75%;
+
+}
+#icons #i3:hover{
+    color: cornflowerblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+
+}
+#i1,#i2,#i3{
+    color:black;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i1:hover{
+    color: skyblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i2:hover{
+    color: rgb(211, 64, 38);
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+
+
+
+        header {
+            background-color: #226B80;
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            width: 100%;
+            margin-top: 3%;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 160px #fff;
+            position: fixed;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #226B80;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            top: 17%;
+          
+        
+           
+        }
+         
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        nav a:hover{
+            color: black;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+        section {
+            padding: 20px;
+            padding-top: 10%;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 50%;
+            height: auto;
+        }
+        footer {
+            background-color: #226B80;
+            color: #fff;
+            padding: 10px;
+              text-align: center;
+         }
+         @media (max-width: 768px) {
+            /* Define styles for screens with a maximum width of 768px (adjust as needed) */
+            nav {
+                flex-direction: column;
+                align-items: center;
+                top: 0;
+                position: relative;
+            }
+            
+            nav a {
+                margin: 10px 0;
+            }
+            
+            .image-container {
+                flex-direction: column;
+            }
+            
+            img {
+                max-width: 100%;
+            }
+            #bar{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="bar">
+        <a href="index.html">  <img id="logo" src="zlogo.png" alt="">
+            <h2 id="h21">ASCT</h2></a>
+         <div id="barlist">
+            <a href="index.html"> <h3>HOME</h3></a>
+            <a href="index.html#facilities"><h3>FACILITIES</h3></a>
+            <a href="department.html"><h3>DEPARTMENTS</h3></a>
+            <a href="gallary.html"><h3>GALLARY</h3></a>
+            <a href="contactus.html"><h3>CONTACT US</h3></a>
+            <a href="index.html#services"><h3>SERVICES</h3></a>
+         </div>
+           <div id="icons">
+           <a href=""><i id="i1" class="ri-twitter-fill"></i></a>
+           <a href="https://www.instagram.com/asct_bhopal/"><i id="i2" class="ri-instagram-line"></i></a>
+           <a href="https://m.facebook.com/people/All-Saints-College-of-Technology-Bhopal/100066499428214/?locale=lv_LV"><i id="i3" class="ri-facebook-fill"></i></a>
+           <a href=""><i id="i3" class="ri-linkedin-fill"></i></a>
+           </div>
+    </div>
+    <header>
+        <h1>ASCT PROGRAMS</h1>
+    </header>
+    <nav>
+        <a href="#vision-tech">VISION-TECH</a>
+        <a href="#conference-seminars">CONFERENCE-SEMINARS</a>
+        <a href="#membership">MEMBERSHIP</a>
+        <a href="#clubs-activity">CLUBS-ACTIVITY</a>
+        <a href="#faculty-improvement">FACULTY-IMPROVEMENT</a>
+    </nav>
+    <section id="vision-tech">
+        <h2>Vision Tech</h2>
+        <p>A festival of knowledge and culture is held in the months of February and March of every year. It links different knowledge networks and reinforces the significance of Innovation, Interaction, Information, Communication and Technology in the 21st century by means of panel discussions, lectures, workshops, exhibitions and exciting competitive events. It serves as a meeting place for creative minds to discuss their ideas and allow for testing of their ideas in the face of intense competition, rigorous evaluation, culminating in sporting events and a show of talent in cultural activities.
+
+            “VisionTech” is designed to inspire solutions in which technology, culture and humanitarianism co-exist. The participants attempt to inspire creativity that is essential for technological and cultural development. “VisionTech” creates a platform for technologists to harmonize their aptitude, learning and technical understanding and skills.
+            
+            “VisionTech 2004” was the first experiment with this idea of a composite festival, with events ranging from areas of Networks and Software to theatre and music competitions. The idea was to find a place where we would be able to map the mutual relationship between technology and culture and examine their reciprocity.</p>
+        <div class="image-container">
+            <img src="https://visiontech-partners.com/wp-content/themes/visiontech/dist/images/visiontech-logo-two-color.png" alt="Vision Tech">
+        </div>
+    </section>
+    <section id="conference-seminars">
+        <h2>Conference Seminars</h2>
+        <p>Seminars, Conferences and Workshops are organized throughout the year, to develop interpersonal communication, team work and presentation skills. These are organized for Scientists, Engineers and Research Scholars of Engineering and its applications with a view to publish high quality papers and promote original research and innovative application.
+        </p>
+        <div class="image-container">
+            <img src="https://www.allconferencealert.com/blog/wp-content/uploads/2021/12/Conference-Seminars-1-1024x576.jpg" alt="Conference Seminars">
+        </div>
+    </section>
+    <section id="membership">
+        <h2>Membership of Professional Bodies</h2>
+        <p>It is essential to keep pace with latest developments in the field of technology and marketing and to be part of professional bodies and institutions. This provides opportunities to our students to gain expertise in leadership, program management and project management skills. We provide regular news updates which disseminate key information and knowledge through publications, journals and online services to build a network of peers, experts and professional associations. ASCT and ASCE are permanent members of the following institutions:
+
+            • Institutional Membership:
+            
+            o Indian Society of Technical Education (ISTE).
+            
+            o Computer Society of India (CSI).
+            
+            • Student chapter:
+            
+            o Indian Society of Technical Education (ISTE).
+            
+            • Individual Membership of Faculty Members:
+            
+            o Life Membership Indian Society of Technical Education (ISTE).
+            
+            o Computer Society of India (CSI).
+            
+            o Institution of Electrical & Electronics Engineering (IEEE).
+            
+            o Institution of Engineers of India (IEI).
+            
+            o American Society of Mechanical Engineers (ASME).
+            
+            o Standard Council of India (SCI).
+            </p>
+        <div class="image-container">
+            <img src="https://images.collegedunia.com/public/college_data/images/campusimage/14902718703.jpg" alt="Membership">
+        </div>
+    </section>
+    <section id="clubs-activity">
+        <h2>Our Clubs Activity</h2>
+        <p>All Saints’ College of Technology has formed various clubs where group activities are conducted with the aim to identify and promote talent and enable students to hone their skills and prove their mettle. Co-Curricular activities are given high priority at our Institutions by providing our students with a diverse range of both indoor and outdoor activities:
+
+            Academicians’ Club:
+            
+            Members of this club are motivated to write technical papers, articles and are guided how to write reports and articles effectively by experts in their respective fields. Technical quiz and seminars (in-house) are organized where members participate and experts provide their views and suggestions. Students are encouraged to survey and submit articles for magazines, journals and on our websites.
+            
+            Energy Club:
+            
+            Non-conventional sources of energy are becoming the need of the hour. Members carry out projects on solar and wind energy systems and hybrid energy generation. To save conventional fuel, various projects on battery operated and hybrid vehicles are encouraged. Conduct of energy audit, use of energy saving devices is a part of this popular club.
+            
+            Cultural and Literary Club:
+            
+            Students who are interested in cultural activities such as literature, dance, music, singing, arts & craft etc. are members of this club to practise and demonstrate their talents at the Club and at annual function.
+            
+            Sports Club:
+            
+            We promote various indoor and outdoor sports activities. Students are given the choice to opt for the sports and games in which they are interested. Our coaches prepare the members for State and National sports events. The College campus has a national level cricket ground with turf wickets in which College and State level Cricket Tournaments are held.
+            
+            Skill Development Club:
+            
+            The activities of this club are centered round the development of technical skills, self-employment and entrepreneurship modalities. Innovative ideas and initiatives are encouraged through Projects and Work Experience. Students avail of facilities as well as expert guidance in their projects.</p>
+        <div class="image-container">
+            <img src="https://www.asctbhopal.com/images/asct_02.jpg" alt="Clubs Activity">
+        </div>
+    </section>
+    <section id="faculty-improvement">
+        <h2>Faculty Improvement Programs</h2>
+        <p>The College aspires to further enhance the quality of faculty members:
+
+            · Staff members are sponsored for M.Tech and Ph.D programmes in reputed institutions like IITs and RECs.
+            
+            · Faculty are encouraged to attend Summer and Winter Schools organized by AICTE/ISTE/IIT/REC/RGPV/NITTTR.
+            
+            · Staff members are motivated to participate in National level Seminars and Conferences and Workshops to update their knowledge in the subject of their choice for improvement in teaching methods and curriculum development.
+            
+            · Co-ordination with the faculty induction programme of AICTE.
+            
+            · Faculty attend regular training programmes in NITTTR at the behest of AICTE.
+            
+             </p>
+        <div class="image-container">
+            <img src="https://www.livemint.com/rf/Image-621x414/LiveMint/Period1/2012/08/20/Photos/Professor%20(1--621x414.JPG" alt="Faculty Improvement Programs">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ASCT BHOPAL. All rights reserved.</p>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+    </script>
+</body>
+</html>

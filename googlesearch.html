@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google chrome</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;
+          
+        }
+        #main{
+            height: 100%;
+            width: 100%;
+            background-image:url(https://d33v4339jhl8k0.cloudfront.net/docs/assets/64d1a605cd74a910514168ca/images/64f6e98e4578be67333c6bb5/file-1Edqn7eN75.png);
+            background-position: center;
+            background-size:cover;
+        }
+
+        .container {
+            
+            margin: 50px auto;
+            padding: 20px;
+            width: 59%;
+            border-radius: 5px;
+            position: relative;
+            top: 37%;
+            left: 1%;
+            
+         
+        }
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 32px;
+            box-sizing: border-box;
+        }
+        .suggestion {
+            display: none;
+            color: #666;
+            font-style: italic;
+            font-size: 150%;
+            background-color:white ;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   <div id="main">
+    <div class="container">
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="search with google">
+            <p class="suggestion" id="suggestion">Did you mean: <a target="_blank" href="index.html"><strong>ALL SAINTS COLLEGE OF TECHNOLOGY</strong></a></p>
+        </div>
+    </div>
+   </div>
+
+
+   <script>
+    document.getElementById('searchInput').addEventListener('input', function() {
+        var inputValue = this.value.trim().toLowerCase();
+        var suggestion = document.getElementById('suggestion');
+        
+        if (inputValue === 'best engineering college in bhopal') {
+            suggestion.style.display = 'block';
+        }
+        else if (inputValue === 'best engineering college in mp') {
+            suggestion.style.display = 'block';
+        }
+        else if (inputValue === 'best engineering college in india') {
+            suggestion.style.display = 'block';
+        }
+        else if (inputValue === 'best engineering college in the world') {
+            suggestion.style.display = 'block';
+        }
+        else {
+            suggestion.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>

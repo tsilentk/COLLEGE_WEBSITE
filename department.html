@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon"type="x" href="zcartoonasct.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>DEPARTMENTS</title>
+
+        <style>
+            * {
+                scroll-behavior: smooth;
+            }
+            
+            body {
+                font-family: sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            a{
+    text-decoration: none;
+}
+#bar{
+    display: flex;
+    height: 5%;
+    width: 100%;
+    z-index: 100; 
+    box-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    border-bottom: 1px solid black;
+ 
+    background-color:#22668D;
+    border-radius: 10px;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    
+
+
+    opacity: 1;
+    position: fixed;
+    top: -2%;
+    z-index: 1000;
+
+    
+}
+#logo{
+   
+    height:100%;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 2%;
+    background-color: #FEFEDF;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#h21{
+    color: brown;
+    font-size: 250%;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+    position: absolute;
+    top: -30%;
+    left: 3%;
+}
+#barlist{
+  
+    border-radius: 10px;
+    width: 60%;
+    height: 90%;
+    display: flex;
+
+    margin-left: 12%;
+    justify-content: space-around;
+  
+}
+#barlist h3{
+    color: white;
+    text-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
+    transition: all ease 0.1s;
+}
+#barlist h3:hover{
+    color: brown;
+    font-size: 110%;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons{
+
+    display: flex;
+    width: 20%;
+    font-size: 180%;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 1.5%;
+
+    position: absolute;
+    top: 2%;
+    left: 75%;
+
+}
+#icons #i3:hover{
+    color: cornflowerblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+
+}
+#i1,#i2,#i3{
+    color:black;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i1:hover{
+    color: skyblue;
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+#icons #i2:hover{
+    color: rgb(211, 64, 38);
+    background-color: #FEFEDF;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+   0 0 80px #fff;
+}
+
+
+
+
+
+        header {
+            background-color: #226B80;
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            width: 100%;
+            margin-top: 3%;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 160px #fff;
+            position: fixed;
+            z-index: 100; 
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #226B80;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            top: 17%;
+           z-index: 100; 
+        }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(216, 208, 208, 0.2);
+}
+
+nav a:hover {
+    color: black;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+
+
+
+            
+            section {
+                padding: 20px;
+                padding-top: 14%;
+            }
+            
+            .image-container {
+                display: flex;
+                text-align: center;
+                justify-content: space-around;
+            }
+            
+            img {
+                width: 30%; 
+                height: auto;
+            }
+            
+            .container {
+                max-width: 100%; 
+                margin: 20px;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 10px black,
+                            0 0 20px black;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            
+            .placement-card {
+                display: flex;
+                flex-wrap: wrap; 
+                margin-bottom: 20px;
+                padding: 10px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            
+            .placement-card img {
+                max-width: 100%;
+                max-height: 100%;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+            
+            .placement-info {
+                flex: 1;
+                font-size: 100%;
+            }
+            
+            #profilepic {
+                height: 10%;
+                width: 10%;
+            }
+            
+            h2 {
+                text-shadow: 0 0 10px black,
+                             0 0 20px black,
+                             0 0 40px black,
+                             0 0 80px black;
+            }
+            
+            footer {
+                background-color: #226B80;
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+            }
+            @media (max-width: 768px) {
+               nav {
+                flex-direction: column;
+                align-items: center;
+                top: 0;
+                position: relative;
+            }
+            
+            nav a {
+                margin: 10px 0;
+            }
+            #bar{
+                display: none;
+            }
+            
+           }
+            
+            @media (max-width: 768px) {
+                header {
+                    padding: 10px; 
+                }
+                nav {
+                    top: 15%; 
+                }
+                nav a {
+                    margin: 0 10px; 
+                }
+                section {
+                    padding-top: 20%;
+                }
+                #bar{
+                display: none;
+            }
+            }
+        </style>
+ 
+    
+    
+</head>
+<body>
+    <div id="bar">
+        <a href="index.html">  <img id="logo" src="zlogo.png" alt="">
+            <h2 id="h21">ASCT</h2></a>
+         <div id="barlist">
+            <a href="index.html"> <h3>HOME</h3></a>
+            <a href="index.html#facilities"><h3>FACILITIES</h3></a>
+            <a href="department.html"><h3>DEPARTMENTS</h3></a>
+            <a href="gallary.html"><h3>GALLARY</h3></a>
+            <a href="contactus.html"><h3>CONTACT US</h3></a>
+            <a href="index.html#services"><h3>SERVICES</h3></a>
+         </div>
+           <div id="icons">
+           <a href=""><i id="i1" class="ri-twitter-fill"></i></a>
+           <a href="https://www.instagram.com/asct_bhopal/"><i id="i2" class="ri-instagram-line"></i></a>
+           <a href="https://m.facebook.com/people/All-Saints-College-of-Technology-Bhopal/100066499428214/?locale=lv_LV"><i id="i3" class="ri-facebook-fill"></i></a>
+           <a href=""><i id="i3" class="ri-linkedin-fill"></i></a>
+           </div>
+    </div>
+    <header>
+        <h1>ASCT DEPARTMENTS</h1>
+    </header>
+    <nav>
+        <a id="a1" href="#CIVIL ENGINEERING">CIVIL ENGINEERING</a>
+        <a id="a2" href="#COMPUTER SCIENCE ENGINEERING">COMPUTER SCIENCE ENGINEERING</a>
+        <a id="a3" href="#ELECTRICAL & ELECTRONICS ENGINEERING">ELECTRICAL & ELECTRONICS ENGINEERING</a>
+        <a id="a4" href="#ELECTRONICS & COMMUNICATION ENGINEERING">ELECTRONICS & COMMUNICATION ENGINEERING</a>
+        <a id="a5" href="#MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</a>
+        <a id="a6" href="#APPLIED PHYSICS">APPLIED PHYSICS</a>
+        <a id="a7" href="#APPLIED CHEMISTRY">APPLIED CHEMISTRY</a>
+        <a id="a8" href="#APPLIED MATHMATICS">APPLIED MATHMATICS</a>
+        <a id="a9" href="#HUMANITIES">HUMANITIES</a>
+     
+    </nav>
+    <section id="CIVIL ENGINEERING">
+        <h2>CIVIL ENGINEERING</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="zwasim.jpg" alt="HOD">
+                <div class="placement-info">
+                   <h3>Prof. Wasim Khan <br>
+                    HOD <br>
+                    Dept. of Civil Engineering</h3>
+                    
+                </div>
+            </div>
+        <p>From the beginning of civilization this branch of Engineering provides the foundation for all types of construction work. It deals with traditional as well as innovative methods of engineering with safety measures and regular maintenance. Infrastructural development deals with planning, surveying, material testing, designing of structure, supervision, construction management and execution of works. The demand for civil engineers is constantly increasing and opportunities for entrepreneurship and employment, as well as for community and nation building are unlimited. Placements and scope in this field are increasing day by day, promising a bright future for civil engineers.</p>
+        <div class="image-container">
+
+             <img src="https://www.asctbhopal.com/images/civil_Stream.jpg" alt=""> 
+            <img src="https://www.asctbhopal.com/images/civil_08.jpg" alt="">
+            <img src="https://www.asctbhopal.com/images/civil_01.jpg" alt="">
+           
+        </div>
+    </section>
+    <section id="COMPUTER SCIENCE ENGINEERING">
+        <h2>COMPUTER SCIENCE ENGINEERING</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://www.asctbhopal.com/asct/asct_new/Images/BPS.JPG" alt="HOD">
+                <div class="placement-info">
+                   <h3>Prof. B.P.S Senger<br>
+                    HOD <br>
+                    Dept. of Computer Science Engineering</h3>
+                    
+                </div>
+            </div>
+        <p>The Computer Science & Engineering  Department of All Saints' College of Technology aims at bridging the gap between the vast resources of information and the student's eagerness to acquire knowledge. We are fortunate to be led by a well trained and highly motivated teaching staff. In addition to teaching assignments, some faculty members are engaged in research work which is actively supported by the college. Stalwarts from the industry are frequently invited to conduct seminars on topics of various subjects, to keep the students abreast with the latest developments in the industry. The Training and Placement cell is in constant touch with Industries to help the students in undergoing final year projects.</p>
+        <div class="image-container">
+
+             <img src="https://www.asctbhopal.com/images/campus_12.jpg" alt=""> 
+            <img src="https://www.asctbhopal.com/images/lab_asct_01.jpg" alt="">
+            <img src="https://www.asctbhopal.com/images/CS_06.jpg" alt="">
+            
+           
+        </div>
+    </section>
+    <section id="ELECTRICAL & ELECTRONICS ENGINEERING">
+        <h2>ELECTRICAL & ELECTRONICS ENGINEERING</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="https://www.asctbhopal.com/asct/asct_new/Images/anilkumarsahu.JPG" alt="HOD">
+                <div class="placement-info">
+                   <h3>Prof. Anil Kumar Sahu<br>
+                    HOD <br>
+                    Dept. of Electrical & Electronics Engineering</h3>
+                    
+                </div>
+            </div>
+        <p>The Electrical and Electronics branch of Engineering is of premier importance as there is not a single industry (small scale or large corporate sector) which does not require electrical equipment. This branch of engineering offers maximum job opportunities in various fields of electrical and electronics engineering, such as consultancy, design, manufacturing, testing, quality control, erection work , commissioning and maintenance. Apart from these specialized engineering jobs, the software and system engineering sector is always open for electrical and electronics engineering graduates who are also eligible for BANK SERVICES, IES, IPS, IAS, DEFENCE, DRDO, public sector jobs, PSC and many more.
+
+            Our well-equipped labs provide students with the opportunity to gain practical and real-life experience by making projects under the guidance of expert faculty.
+            </p>
+        <div class="image-container">
+
+             <img src="https://www.asctbhopal.com/images/Electrical_01.jpg" alt=""> 
+            <img src="https://www.asctbhopal.com/images/Electrical_02.jpg" alt="">
+            <img src="https://www.asctbhopal.com/images/Electrical_03.jpg" alt="">
+           
+        </div>
+    </section>
+    <section id="ELECTRONICS & COMMUNICATION ENGINEERING">
+        <h2>ELECTRONICS & COMMUNICATION ENGINEERING</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="" alt="HOD">
+                <div class="placement-info">
+                   <h3>Prof.ASHISH PRONAIK <br>
+                    HOD <br>
+                    Dept. of Electronics & Communication Engineering</h3>
+                    
+                </div>
+            </div>
+        <p>lectronics and Communication Engg. is one of the most preferred engineering branches,  which offers bright career and job opportunities in almost all small scale, corporate and multinational industries, consultancy services and in the software sector. Its utility is unmatched in BANK SERVICES, IES, IPS, IAS, DEFENCE, DRDO, Public Sectors, PSC.
+
+            The Department has well equipped laboratories, such as VLSI lab, Optical Fiber Communication lab, Microwave Engg. lab, Analog and Digital Communication lab, Micro Processor lab and project lab, where complete project work is being carried out by students themselves, under the able guidance of faculty members.
+            </p>
+        <div class="image-container">
+
+             <img src="https://www.asctbhopal.com/images/EC_02.jpg" alt=""> 
+            <img src="https://www.asctbhopal.com/images/EC_04.jpg" alt="">
+            <img src="https://www.asctbhopal.com/images/EC_01.jpg" alt="">
+           
+        </div>
+    </section>
+    <section id="MECHANICAL ENGINEERING">
+        <h2>MECHANICAL ENGINEERING</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                <img id="profilepic" src="" alt="HOD">
+                <div class="placement-info">
+                   <h3>Prof. D.C. Vishwakarma<br>
+                    HOD <br>
+                    Dept. of Mechanical Engineering</h3>
+                    
+                </div>
+            </div>
+        <p>We are providing world class undergraduate and post-graduate engineering education in Mechanical Engineering, with ample scope to include basic and specialized engineering training to meet the current and emerging needs of society. Our department fosters R&D and disseminates technology through publications, presentations and projects. We have well-equipped and high-tech labs to prepare our students for successful engineering careers by promoting entrepreneurship, professional and ethical responsibilities.
+
+            We have always had a good placement record, even in the recession period. We have highly qualified faculty members, the majority of whom have M.Tech. and Ph.D. degrees, as well as significant industrial exposure.
+            
+            </p>
+        <div class="image-container">
+
+             <img src="https://www.asctbhopal.com/images/Mechanical_10.jpg" alt=""> 
+            <img src="https://www.asctbhopal.com/images/Mechanical_09.jpg" alt="">
+            <img src="https://www.asctbhopal.com/images/Mechanical_03.jpg" alt="">
+           
+        </div>
+    </section>
+    <section id="APPLIED PHYSICS">
+        <h2>APPLIED PHYSICS</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                
+                <div class="placement-info">
+                   <h3>Dept. Of Applied Physics</h3>
+                    
+                </div>
+            </div>
+        <p>
+            Engineering Physics teaches the application of modern physics in accordance with new technological advances. Our design tools are the concepts of electrons, photons and neutrons – the tiny quantum mechanical objects of modern physics. These are the tools being used to develop advanced technologies in fields as diverse as:
+            <ul>
+            <li>Mechatronics</li>
+            <li>Nano-system engineering</li>
+            <li>Nuclear engineering</li>
+            <li>Sustainable energy systems</li>
+            <li>Optoelectronics</li>
+            <li>Semiconductor devices</li>
+           </ul>
+            </p>
+        <div class="image-container">
+
+             <img src="https://images.shiksha.com/mediadata/images/articles/1681209899php8OqvF2.jpeg" alt=""> 
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/022/006/509/small/science-background-illustration-scientific-design-flasks-glass-and-chemistry-physics-elements-generative-ai-photo.jpeg" alt="">
+            <img src="https://cerncourier.com/wp-content/uploads/2023/04/CCMayJun23_REV_Event.jpg" alt="">
+           
+        </div>
+    </section>
+    <section id="APPLIED CHEMISTRY">
+        <h2>APPLIED CHEMISTRY</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                
+                <div class="placement-info">
+                   <h3>Dept. Of Applied Chemistry</h3>
+                    
+                </div>
+            </div>
+        <p>
+            Chemistry is the basic component of all technical studies and applicability in industrial design and equipment. In order to enable students to develop the requisite skills, the Department of Engineering Chemistry provides facilities for all practical demonstrations and experiments.
+            Students are given every opportunity to understand and undertake tasks related to chemistry which have a bearing on their subjects of study. <br>FACILITIES AVAILABLE:-
+
+            <ol>
+            <li> Hardness determination by various methods.</li>
+            <li>Hi-Tech and updated instrumentation</li>
+            <li>Analysis method for various types of fuel.</li>
+        
+             </ol>
+            </p>
+        <div class="image-container">
+
+             <img src="https://t4.ftcdn.net/jpg/05/60/24/65/240_F_560246560_ALtZlIR9tw6np1E8UO69M3Drc0E4trcO.jpg" alt=""> 
+            <img src="https://t3.ftcdn.net/jpg/06/66/75/30/240_F_666753034_0nv5492EUMh8OZOldY1G31ywTDXty83d.jpg" alt="">
+            <img src="https://t4.ftcdn.net/jpg/06/28/91/31/240_F_628913143_wXrnec5MQDUr1lwkmIROVxTUoylAKrhA.jpg" alt="">
+           
+        </div>
+    </section>
+    <section id="APPLIED MATHMATICS">
+        <h2>APPLIED MATHMATICS</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                
+                <div class="placement-info">
+                   <h3>Dept. Of Applied Mathmatics</h3>
+                    
+                </div>
+            </div>
+        <p>
+            The Department of Mathematics relates to the teaching of mathematics for all branches of engineering. Research articles in national and international journals have been published by faculty members, who also contribute to research journals and consultancy teams and collaborate with other departments in conducting classes of programming languages and techniques, fuzzy networks and other fields of Computer Technology. The department periodically updates its teaching systems to keep abreast of latest developments.
+            </p>
+        <div class="image-container">
+
+             <img src="https://images.osu.cz/slider/4016.jpg" alt=""> 
+            <img src="https://online.nebraska.edu/-/media/projects/online/images/programs/masters/mathematics/mathematics-tile-min.jpg" alt="">
+            <img src="https://www.pngitem.com/pimgs/m/382-3821235_department-of-mathematics-hd-png-download.png" alt="">
+           
+        </div>
+    </section>
+    <section id="HUMANITIES">
+        <h2>HUMANITIES</h2>
+        <div class="container">
+            <div class="placement-card">
+              
+                
+                <div class="placement-info">
+                   <h3>Dept. Of Humanities</h3>
+                    
+                </div>
+            </div>
+        <p>
+            With the rapid growth of the industrial and tertiary sector, professional communication has acquired great importance. More and more organizations recruit engineers with good Communication Skills which play a pivotal role in all the three phases of the recruitment process i.e. the Written phase, G.D. and Personal Interview. The main aim of Communication Skills is to harness reading, writing, listening and speaking skills of students with special attention to English which is an international language.
+
+            Role of the Department:
+            The department of Humanities was established to teach English to engineering students. The English Language Lab is a vibrant hub through which our students are gaining confidence and expertise not only in communication skills but also in terms of developing their potential for social interaction and exchange latent qualities of initiative and leadership essential in this highly competitive corporate world. <br>
+            Department Goals:- <br>
+            <ul>
+                <li>• Train students to communicate effectively in English.</li>
+                <li>• Prepare them for group discussion and personal interviews.</li>
+                <li>• Guide them to present themselves with confidence as persons with positive traits-both ability and good manners-as assets to interactions with future employers.</li>
+            </ul>
+            </p>
+        <div class="image-container">
+
+             <img src="https://www.mbu.edu/wp-content/uploads/2019/11/MBU_Dept_Humanities_Banner.png" alt=""> 
+            <img src="https://researchmethod.net/wp-content/uploads/2022/09/What_is_Humanities-1024x576.jpg" alt="">
+            <img src="https://www.usm.edu/humanities/images/misc/humanitiestree-square.jpg" alt="">
+           
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ASCT BHOPAL. All rights reserved.</p>
+      </footer>
+    
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
+
+
+  <script>
+
+
+
+    
+var tl = gsap.timeline();
+
+tl.to("#a1",{
+    x:"100vh",
+    scale:0.6,
+    duration:0
+})
+tl.to("#a1",{
+    x:"20vh",
+    
+    duration:0.3,
+    delay:0,
+})
+tl.to("#a1",{
+    
+    x:"ovh",
+    y:"0vh",
+    scale:1,
+    duration:0.2
+})
+
+
+tl.to("#a2",{
+    x:"100vh",
+    scale:0.6,
+    duration:0
+})
+tl.to("#a2",{
+    x:"20vh",
+    duration:0.3,
+    delay:0,
+})
+tl.to("#a2",{
+    
+    x:"ovh",
+    y:"0vh",
+    scale:1,
+    duration:0.2
+})
+
+
+tl.to("#a3",{
+    x:"100vh",
+    scale:0.6,
+    duration:0
+})
+tl.to("#a3",{
+    x:"20vh",
+    duration:0.3,
+    delay:0,
+})
+tl.to("#a3",{
+    
+    x:"ovh",
+    y:"0vh",
+    scale:1,
+    duration:0.2
+})
+
+tl.to("#a4",{
+    x:"100vh",
+    scale:0.6,
+    duration:0
+})
+tl.to("#a4",{
+    x:"20vh",
+    duration:0.3,
+    delay:0,
+})
+tl.to("#a4",{
+    
+    x:"ovh",
+    y:"0vh",
+    scale:1,
+    duration:0.2
+})
+
+
+tl.to("#a5",{
+    x:"100vh",
+    scale:0.6,
+    duration:0
+})
+tl.to("#a5",{
+    x:"20vh",
+    duration:0.3,
+    delay:0,
+})
+tl.to("#a5",{
+    
+    x:"ovh",
+    y:"0vh",
+    scale:1,
+    duration:0.2
+})
+
+
+tl.to("#a6",{
+    x:"100vh",
+    scale:0.6,
+    duration:0
+})
+tl.to("#a6",{
+    x:"20vh",
+    duration:0.3,
+    delay:0,
+})
+tl.to("#a6",{
+    
+    x:"ovh",
+    y:"0vh",
+    scale:1,
+    duration:0.2
+})
+
+
+tl.to("#a7",{
+    x:"100vh",
+    scale:0.6,
+    duration:0
+})
+tl.to("#a7",{
+    x:"20vh",
+
+    duration:0.3,
+    delay:0,
+})
+tl.to("#a7",{
+    
+    x:"ovh",
+    y:"0vh",
+    scale:1,
+    duration:0.2
+})
+
+
+
+tl.to("#a8",{
+    x:"100vh",
+    scale:0.6,
+    duration:0
+})
+tl.to("#a8",{
+    x:"20vh",
+    duration:0.3,
+    delay:0,
+})
+tl.to("#a8",{
+    
+    x:"ovh",
+    y:"0vh",
+    scale:1,
+    duration:0.2
+})
+
+tl.to("#a9",{
+    x:"100vh",
+    scale:0.6,
+    duration:0
+})
+tl.to("#a9",{
+    x:"20vh",
+    duration:0.3,
+    delay:0,
+})
+tl.to("#a9",{
+    
+    x:"ovh",
+    y:"0vh",
+    scale:1,
+    duration:0.2
+})
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
